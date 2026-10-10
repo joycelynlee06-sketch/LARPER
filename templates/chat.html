@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat | LARPER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        /* CHAT CONTAINER SIZE ADJUSTMENTS */
+        .chat-container {
+            max-width: 900px; /* Made wider (larger) */
+            width: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* CHAT MESSAGES DISPLAY AREA */
+        .chat-messages {
+            min-height: 500px; /* Made longer/taller */
+            max-height: 650px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px;
+            background: #f9f8fb;
+            border-radius: 12px;
+            border: 1px solid #efe8f3;
+        }
+
+        /* MESSAGE STYLING */
+        .message {
+            max-width: 85%;
+            padding: 14px 18px;
+            border-radius: 12px;
+            line-height: 1.5;
+            font-size: 1.05rem;
+        }
+
+        .user-message {
+            align-self: flex-end;
+            background-color: #8f72df;
+            color: #ffffff;
+        }
+
+        .bot-message {
+            align-self: flex-start;
+            background-color: #ffffff;
+            border: 1px solid #e2d9f3;
+            color: #2b2b2b;
+        }
+
+        .message-sender {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            opacity: 0.8;
+        }
+
+        /* LARGER INPUT FORM */
+        .chat-form {
+            display: flex;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 16px 20px; /* Larger padding */
+            font-size: 1.1rem;   /* Enlarged text */
+            border: 2px solid #e2d9f3;
+            border-radius: 12px;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .chat-input:focus {
+            border-color: #8f72df;
+        }
+
+        .chat-form button {
+            padding: 16px 28px;
+            font-size: 1.05rem;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="/" class="brand" style="text-decoration: none;">
+            <div class="brand-icon">✦</div>
+            <div class="brand-name">LARPER</div>
+        </a>
+
+        <div class="nav-links">
+            <a href="/#how">How it works</a>
+            <a href="/#categories">Explore trends</a>
+            <a href="{{ url_for('chat') }}">AI Chat</a>
+            <a href="{{ url_for('check') }}" class="nav-button">
+                Check a trend <span>→</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- CHAT SECTION -->
+    <section class="chat-section" style="padding: 40px 20px;">
+        <div class="chat-header" style="text-align: center; margin-bottom: 24px;">
+            <div class="section-label">DEMO ASSISTANT</div>
+            <h2>Ask LARPER Assistant</h2>
+            <p>Type any question from the question bank to test the chatbot.</p>
+        </div>
+
+        <div class="chat-container">
+            <!-- CHAT DISPLAY -->
+            <div class="chat-messages">
+                {% if chat_question %}
+                <div class="message user-message">
+                    <div class="message-sender">You</div>
+                    <div class="message-body">{{ chat_question }}</div>
+                </div>
+                {% endif %}
+
+                {% if chat_reply %}
+                <div class="message bot-message">
+                    <div class="message-sender">✦ LARPER Assistant</div>
+                    <div class="message-body">{{ chat_reply }}</div>
+                </div>
+                {% endif %}
+
+                {% if error %}
+                <div class="message error-message" style="background: #ffe6e6; color: #d93025; align-self: center;">
+                    <div class="message-body">{{ error }}</div>
+                </div>
+                {% endif %}
+
+                {% if not chat_question and not chat_reply %}
+                <div class="message bot-message">
+                    <div class="message-sender">✦ LARPER Assistant</div>
+                    <div class="message-body">Hi! Type a question below to see how I analyze trends.</div>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- CHAT INPUT FORM -->
+            <form action="{{ url_for('chat') }}" method="POST" class="chat-form">
+                <input
+                        type="text"
+                        name="question"
+                        class="chat-input"
+                        placeholder="Type a question here..."
+                        value="{{ chat_question }}"
+                        required
+                        autofocus
+                >
+                <button type="submit" class="main-button">Send <span>→</span></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="/" class="brand" style="text-decoration: none;">
+            <div class="brand-icon">✦</div>
+            <div class="brand-name">LARPER</div>
+        </a>
+        <div class="footer-message">Smart trend decisions, made simple.</div>
+        <div class="footer-copy">© 2026 LARPER</div>
+    </footer>
+
+</div>
+
+</body>
+
+</html>

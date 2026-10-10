@@ -3,513 +3,152 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LARPER</title>
-
-    <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='css/style.css') }}"
-    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-
 
 <body>
 
 <div class="page">
-
 
     <!-- ==================================================
          NAVIGATION
     =================================================== -->
 
     <nav class="navbar">
-
-        <a
-                href="/"
-                class="brand"
-                style="text-decoration: none;"
-        >
-
-            <div class="brand-icon">
-                ✦
-            </div>
-
-            <div class="brand-name">
-                LARPER
-            </div>
-
+        <a href="/" class="brand" style="text-decoration: none;">
+            <div class="brand-icon">✦</div>
+            <div class="brand-name">LARPER</div>
         </a>
 
-
         <div class="nav-links">
-
-            <a href="#how">
-                How it works
+            <a href="/#how">How it works</a>
+            <a href="/#categories">Explore trends</a>
+            <a href="{{ url_for('chat') }}">AI Chat</a>
+            <a href="{{ url_for('check') }}" class="nav-button">
+                Check a trend <span>→</span>
             </a>
-
-            <a href="#categories">
-                Explore trends
-            </a>
-
-            <a
-                    href="/check"
-                    class="nav-button"
-            >
-                Check a trend
-                <span>→</span>
-            </a>
-
         </div>
-
     </nav>
-
 
 
     <!-- ==================================================
          HERO SECTION
     =================================================== -->
 
-    <section
-            class="hero"
-            id="how"
-    >
-
-
-        <!-- LEFT SIDE -->
-
+    <section class="hero" id="how">
         <div class="hero-content">
-
-            <div class="eyebrow">
-                ✦ YOUR TREND DECISION SIDEKICK
-            </div>
-
+            <div class="eyebrow">✦ YOUR TREND DECISION SIDEKICK</div>
 
             <h1 class="hero-title">
-
-                Should I join
-                this trend?
-
-                <span>
-                    Or am I already
-                    too late?
-                </span>
-
+                Should I join this trend?
+                <span>Or am I already too late?</span>
             </h1>
 
-
             <p class="hero-description">
-
-                LARPER helps creators and small businesses
-                understand whether a trend is still growing,
+                LARPER helps creators and small businesses understand whether a trend is still growing,
                 already crowded, or beginning to lose popularity.
-
             </p>
 
-
             <div class="hero-actions">
-
-                <a
-                        href="/check"
-                        class="main-button"
-                >
-                    Check a Trend
-                    <span>→</span>
+                <a href="{{ url_for('check') }}" class="main-button">
+                    Check a Trend <span>→</span>
                 </a>
 
-
                 <div class="powered-note">
-
-                    <span class="spark">
-                        ✦
-                    </span>
-
-                    <span>
-                        Powered by search and<br>
-                        engagement signals
-                    </span>
-
+                    <span class="spark">✦</span>
+                    <span>Powered by search and<br>engagement signals</span>
                 </div>
-
             </div>
-
         </div>
-
-
-
-        <!-- RIGHT SIDE -->
 
         <div class="hero-visual">
-
             <div class="graph-card">
-
-
                 <div class="blue-circle"></div>
-
                 <div class="green-circle"></div>
 
-
                 <div class="graph-title">
-
-                    <span>✦</span>
-
-                    A trend's journey
-
+                    <span>✦</span> A trend's journey
                 </div>
-
 
                 <div class="live-badge">
-
-                    <span class="live-dot"></span>
-
-                    LIVE SIGNALS
-
+                    <span class="live-dot"></span> LIVE SIGNALS
                 </div>
-
 
                 <div class="current-point">
-
-                    <div class="eye-icon">
-                        ◉
-                    </div>
-
-                    <div>
-                        Know where<br>
-                        your trend<br>
-                        stands
-                    </div>
-
+                    <div class="eye-icon">◉</div>
+                    <div>Know where<br>your trend<br>stands</div>
                 </div>
 
-
-                <!-- TREND CURVE -->
-
-                <svg
-                        class="trend-chart"
-                        viewBox="0 0 700 310"
-                        preserveAspectRatio="none"
-                >
-
+                <svg class="trend-chart" viewBox="0 0 700 310" preserveAspectRatio="none">
                     <defs>
-
-                        <linearGradient
-                                id="trendGradient"
-                                x1="0%"
-                                x2="100%"
-                        >
-
-                            <stop
-                                    offset="0%"
-                                    stop-color="#7CBC93"
-                            />
-
-                            <stop
-                                    offset="47%"
-                                    stop-color="#8F72DF"
-                            />
-
-                            <stop
-                                    offset="100%"
-                                    stop-color="#E5789B"
-                            />
-
+                        <linearGradient id="trendGradient" x1="0%" x2="100%">
+                            <stop offset="0%" stop-color="#7CBC93" />
+                            <stop offset="47%" stop-color="#8F72DF" />
+                            <stop offset="100%" stop-color="#E5789B" />
                         </linearGradient>
-
                     </defs>
 
+                    <path d="M20 252 C100 247 130 215 190 204 C255 192 270 113 350 94 C430 77 470 132 520 168 C575 208 620 232 680 253"
+                          fill="none" stroke="#EFE8F3" stroke-width="26" stroke-linecap="round" />
 
-                    <path
-                            d="
-                        M20 252
-                        C100 247 130 215 190 204
-                        C255 192 270 113 350 94
-                        C430 77 470 132 520 168
-                        C575 208 620 232 680 253
-                        "
-                            fill="none"
-                            stroke="#EFE8F3"
-                            stroke-width="26"
-                            stroke-linecap="round"
-                    />
-
-
-                    <path
-                            d="
-                        M20 252
-                        C100 247 130 215 190 204
-                        C255 192 270 113 350 94
-                        C430 77 470 132 520 168
-                        C575 208 620 232 680 253
-                        "
-                            fill="none"
-                            stroke="url(#trendGradient)"
-                            stroke-width="10"
-                            stroke-linecap="round"
-                    />
-
+                    <path d="M20 252 C100 247 130 215 190 204 C255 192 270 113 350 94 C430 77 470 132 520 168 C575 208 620 232 680 253"
+                          fill="none" stroke="url(#trendGradient)" stroke-width="10" stroke-linecap="round" />
                 </svg>
 
-
-                <!-- TREND STAGES -->
-
                 <div class="stages">
-
-                    <div class="stage">
-
-                        <div class="stage-dot green-one"></div>
-
-                        <span>
-                            Just Starting
-                        </span>
-
-                    </div>
-
-
-                    <div class="stage">
-
-                        <div class="stage-dot green-two"></div>
-
-                        <span>
-                            Growing Fast
-                        </span>
-
-                    </div>
-
-
-                    <div class="stage">
-
-                        <div class="stage-dot purple"></div>
-
-                        <span>
-                            Very Popular
-                        </span>
-
-                    </div>
-
-
-                    <div class="stage">
-
-                        <div class="stage-dot pink-one"></div>
-
-                        <span>
-                            Too Crowded
-                        </span>
-
-                    </div>
-
-
-                    <div class="stage">
-
-                        <div class="stage-dot pink-two"></div>
-
-                        <span>
-                            Losing Popularity
-                        </span>
-
-                    </div>
-
+                    <div class="stage"><div class="stage-dot green-one"></div><span>Just Starting</span></div>
+                    <div class="stage"><div class="stage-dot green-two"></div><span>Growing Fast</span></div>
+                    <div class="stage"><div class="stage-dot purple"></div><span>Very Popular</span></div>
+                    <div class="stage"><div class="stage-dot pink-one"></div><span>Too Crowded</span></div>
+                    <div class="stage"><div class="stage-dot pink-two"></div><span>Losing Popularity</span></div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
 
 
     <!-- ==================================================
          CATEGORY SECTION
     =================================================== -->
 
-    <section
-            class="categories"
-            id="categories"
-    >
-
-
+    <section class="categories" id="categories">
         <div class="categories-heading">
-
-
             <div>
-
-                <div class="section-label">
-                    WHAT'S ON YOUR MIND?
-                </div>
-
-
-                <h2>
-                    Explore your kind of trend
-                </h2>
-
+                <div class="section-label">WHAT'S ON YOUR MIND?</div>
+                <h2>Explore your kind of trend</h2>
             </div>
-
-
-            <p>
-
-                From menu ideas to your next viral post,
-                LARPER helps you know when to make your move.
-
-            </p>
-
+            <p>From menu ideas to your next viral post, LARPER helps you know when to make your move.</p>
         </div>
-
-
 
         <div class="category-grid">
-
-
-            <!-- FOOD -->
-
-            <a
-                    href="/check"
-                    class="category-card food"
-                    style="text-decoration: none; color: inherit;"
-            >
-
-                <div class="category-icon">
-                    ☕
-                </div>
-
-
-                <div class="category-bottom">
-
-                    <span>
-                        Food
-                    </span>
-
-                    <button type="button">
-                        ›
-                    </button>
-
-                </div>
-
+            <a href="{{ url_for('check') }}" class="category-card food" style="text-decoration: none; color: inherit;">
+                <div class="category-icon">☕</div>
+                <div class="category-bottom"><span>Food</span><button type="button">›</button></div>
             </a>
 
-
-
-            <!-- HANDCRAFT -->
-
-            <a
-                    href="/check"
-                    class="category-card handcraft"
-                    style="text-decoration: none; color: inherit;"
-            >
-
-                <div class="category-icon">
-                    ✎
-                </div>
-
-
-                <div class="category-bottom">
-
-                    <span>
-                        Handcraft
-                    </span>
-
-                    <button type="button">
-                        ›
-                    </button>
-
-                </div>
-
+            <a href="{{ url_for('check') }}" class="category-card handcraft" style="text-decoration: none; color: inherit;">
+                <div class="category-icon">✎</div>
+                <div class="category-bottom"><span>Handcraft</span><button type="button">›</button></div>
             </a>
 
-
-
-            <!-- LIFESTYLE -->
-
-            <a
-                    href="/check"
-                    class="category-card lifestyle"
-                    style="text-decoration: none; color: inherit;"
-            >
-
-                <div class="category-icon">
-                    ♧
-                </div>
-
-
-                <div class="category-bottom">
-
-                    <span>
-                        Lifestyle
-                    </span>
-
-                    <button type="button">
-                        ›
-                    </button>
-
-                </div>
-
+            <a href="{{ url_for('check') }}" class="category-card lifestyle" style="text-decoration: none; color: inherit;">
+                <div class="category-icon">♧</div>
+                <div class="category-bottom"><span>Lifestyle</span><button type="button">›</button></div>
             </a>
 
-
-
-            <!-- ENTERTAINMENT -->
-
-            <a
-                    href="/check"
-                    class="category-card entertainment"
-                    style="text-decoration: none; color: inherit;"
-            >
-
-                <div class="category-icon">
-                    ▣
-                </div>
-
-
-                <div class="category-bottom">
-
-                    <span>
-                        Entertainment
-                    </span>
-
-                    <button type="button">
-                        ›
-                    </button>
-
-                </div>
-
+            <a href="{{ url_for('check') }}" class="category-card entertainment" style="text-decoration: none; color: inherit;">
+                <div class="category-icon">▣</div>
+                <div class="category-bottom"><span>Entertainment</span><button type="button">›</button></div>
             </a>
 
-
-
-            <!-- GROWTH -->
-
-            <a
-                    href="/check"
-                    class="category-card growth"
-                    style="text-decoration: none; color: inherit;"
-            >
-
-                <div class="category-icon">
-                    ▥
-                </div>
-
-
-                <div class="category-bottom">
-
-                    <span>
-                        Growth
-                    </span>
-
-                    <button type="button">
-                        ›
-                    </button>
-
-                </div>
-
+            <a href="{{ url_for('check') }}" class="category-card growth" style="text-decoration: none; color: inherit;">
+                <div class="category-icon">▥</div>
+                <div class="category-bottom"><span>Growth</span><button type="button">›</button></div>
             </a>
-
         </div>
-
     </section>
-
 
 
     <!-- ==================================================
@@ -517,37 +156,17 @@
     =================================================== -->
 
     <section class="check-section">
-
-        <div class="section-label">
-            READY TO CHECK?
-        </div>
-
-
-        <h2>
-            Is your trend still worth joining?
-        </h2>
-
-
+        <div class="section-label">READY TO CHECK?</div>
+        <h2>Is your trend still worth joining?</h2>
         <p>
-
-            Choose a category and a trend.
-            LARPER will analyse its trend status,
-            growing speed, death risk,
-            worth-joining score and recommendation.
-
+            Choose a category and a trend. LARPER will analyse its trend status,
+            growing speed, death risk, worth-joining score and recommendation.
         </p>
 
-
-        <a
-                href="/check"
-                class="main-button"
-        >
-            Start Checking
-            <span>→</span>
+        <a href="{{ url_for('check') }}" class="main-button">
+            Start Checking <span>→</span>
         </a>
-
     </section>
-
 
 
     <!-- ==================================================
@@ -555,37 +174,14 @@
     =================================================== -->
 
     <footer>
-
-
-        <a
-                href="/"
-                class="brand"
-                style="text-decoration: none;"
-        >
-
-            <div class="brand-icon">
-                ✦
-            </div>
-
-            <div class="brand-name">
-                LARPER
-            </div>
-
+        <a href="/" class="brand" style="text-decoration: none;">
+            <div class="brand-icon">✦</div>
+            <div class="brand-name">LARPER</div>
         </a>
 
-
-        <div class="footer-message">
-            Smart trend decisions, made simple.
-        </div>
-
-
-        <div class="footer-copy">
-            © 2026 LARPER
-        </div>
-
-
+        <div class="footer-message">Smart trend decisions, made simple.</div>
+        <div class="footer-copy">© 2026 LARPER</div>
     </footer>
-
 
 </div>
 

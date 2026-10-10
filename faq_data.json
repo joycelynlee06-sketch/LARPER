@@ -1,0 +1,516 @@
+{
+  "question_bank": [
+    "Is it too late to join this trend?",
+    "Should I join this trend now?",
+    "Is this a good time to try this trend?",
+    "Is this trend still worth trying?",
+    "Should I wait before joining?",
+    "Is this trend already dying?",
+    "Is this trend just starting to grow?",
+    "Is this trend at its peak?",
+    "When is the best time to join this trend?",
+    "Should I act on this trend quickly?",
+    "Will this trend still be popular next month?",
+    "Will this trend keep growing?",
+    "Will this trend become more popular?",
+    "Is this trend likely to fade soon?",
+    "How long will this trend last?",
+    "What does the growth rate mean?",
+    "What does fading risk mean?",
+    "Can you explain this trend's statistics?",
+    "Is the trend growing or declining?",
+    "How reliable is this prediction?",
+    "What content should I create using this trend?",
+    "Give me five unique ideas for this trend.",
+    "Give me a beginner-friendly idea.",
+    "Give me a funny content idea.",
+    "Give me an educational content idea.",
+    "Give me a low-budget content idea.",
+    "Give me a short-video idea.",
+    "Give me an idea that tells a story.",
+    "What is an unexpected angle for this trend?",
+    "Can you give me a challenge idea?",
+    "What should I post first?",
+    "Can you give me a content series idea?",
+    "Can you suggest a collaboration idea?",
+    "Can you make this trend more personal?",
+    "Create a 7-day content plan for this trend.",
+    "Will this trend get me more views?",
+    "How can I make my content stand out?",
+    "How should I start my video?",
+    "What caption should I use?",
+    "What hashtags should I use?",
+    "How can I get more engagement?",
+    "Which audience should I target?",
+    "How can I make people watch until the end?",
+    "Should I follow the trend exactly or change it?",
+    "How do I know if my post worked?",
+    "Is this trend oversaturated?",
+    "Are too many people doing this trend?",
+    "How can I compete with bigger creators?",
+    "How can I make a less common version?",
+    "Is there still room for new creators?",
+    "How can I check if this trend is crowded?",
+    "What if everyone has already done it?",
+    "Should I use a niche angle?",
+    "How do I avoid looking like everyone else?",
+    "Can I combine this with another trend?",
+    "Is this trend worth spending money on?",
+    "Should I buy something just because it is trending?",
+    "Can I try this trend on a budget?",
+    "How can I try this without buying new things?",
+    "What should I consider before buying into this trend?",
+    "Does a high worth score mean I should buy it?",
+    "How do I avoid wasting money on a short-lived trend?",
+    "Is this trend practical for students?",
+    "Can you suggest a cheaper alternative approach?",
+    "How do I decide if the trend fits my budget?",
+    "Can you suggest a similar trend with less competition?",
+    "What trend should I explore next?",
+    "Can you suggest something similar in this category?",
+    "How do I find an emerging trend?",
+    "Can you recommend a trend for Malaysian audiences?",
+    "How can I adapt this trend to Malaysian culture?",
+    "Can I connect this trend to student life?",
+    "What related topics could I combine with this trend?",
+    "How do I compare this trend with another one?",
+    "What should I do if this trend is declining?"
+  ],
+  "faqs": [
+    {
+      "topic": "trend_timing",
+      "keywords": [
+        "too late to join",
+        "should i join this trend now",
+        "good time to try",
+        "still worth trying",
+        "should i wait before joining",
+        "best time to join",
+        "act on this trend quickly"
+      ],
+      "answer": "Larper's current recommendation for {trend} is {recommendation}. Its status is {status}, with a recent growth rate of {growth_rate}% and an estimated fading-risk score of {death_risk}/100. These indicators can help you decide whether to test the trend, but they cannot guarantee what will happen next. If you are unsure, try one small post before investing lots of time or money."
+    },
+    {
+      "topic": "trend_stage",
+      "keywords": [
+        "already dying",
+        "just starting to grow"
+      ],
+      "answer": "Larper currently labels {trend} as '{status}'. Its recent growth rate is {growth_rate}% and its growth-speed label is '{growth_speed}'. These are based on the data currently available in Larper, so check the historical chart to see how interest has changed over time."
+    },
+    {
+      "topic": "trend_peak",
+      "keywords": [
+        "at its peak",
+        "reached its peak"
+      ],
+      "answer": "Larper's current status for {trend} is '{status}', and its recent growth rate is {growth_rate}%. This alone cannot prove whether the trend has reached its true peak. Review the historical interest chart for a recent high point and check whether interest has been falling afterward."
+    },
+    {
+      "topic": "future_popularity",
+      "keywords": [
+        "popular next month",
+        "keep growing",
+        "become more popular"
+      ],
+      "answer": "It is not possible to know for certain whether {trend} will stay popular next month. Larper currently shows a status of '{status}', a recent growth rate of {growth_rate}%, and an estimated fading-risk score of {death_risk}/100. Treat these as signals from recent data, not a guarantee. Check the trend again as new data becomes available."
+    },
+    {
+      "topic": "fading_risk",
+      "keywords": [
+        "fade soon",
+        "likely to fade"
+      ],
+      "answer": "{trend} has an estimated fading-risk score of {death_risk}/100 in Larper. This is a heuristic score based on the current trend analysis, not a validated probability that the trend will disappear. Use it alongside the historical chart and recent growth rate of {growth_rate}%."
+    },
+    {
+      "topic": "trend_duration",
+      "keywords": [
+        "how long will this trend last",
+        "trend last"
+      ],
+      "answer": "Larper cannot reliably tell you the exact number of days or months that {trend} will last. Its current status is '{status}' and its recent growth rate is {growth_rate}%. Trends can change quickly, so check the historical data regularly rather than relying on a fixed end date."
+    },
+    {
+      "topic": "explain_growth",
+      "keywords": [
+        "growth rate mean",
+        "what does the growth rate mean"
+      ],
+      "answer": "The recent growth rate compares recent interest with an earlier period in Larper's dataset. For {trend}, the displayed rate is {growth_rate}%. A positive value means the recent period is higher than the comparison period; a negative value means it is lower. It measures the data in Larper, not guaranteed social-media views or sales."
+    },
+    {
+      "topic": "explain_fading_risk",
+      "keywords": [
+        "fading risk mean",
+        "what does fading risk mean"
+      ],
+      "answer": "The estimated fading-risk score is Larper's heuristic indicator of how much caution to use about a trend losing momentum. For {trend}, the score is {death_risk}/100. It is not a scientifically validated probability. Consider it together with the growth rate, status and historical chart."
+    },
+    {
+      "topic": "explain_stats",
+      "keywords": [
+        "explain this trend's statistics",
+        "explain statistics",
+        "explain stats"
+      ],
+      "answer": "Here is Larper's current summary for {trend} ({category}):\n• Status: {status}\n• Recent growth rate: {growth_rate}%\n• Growth speed: {growth_speed}\n• Estimated fading risk: {death_risk}/100\n• Worth score: {worth_score}/100\n• Recommendation: {recommendation}\n\nThe risk and worth scores are heuristic estimates, not guarantees of future outcomes."
+    },
+    {
+      "topic": "trend_direction",
+      "keywords": [
+        "growing or declining",
+        "trend growing or declining"
+      ],
+      "answer": "For {trend}, Larper shows a recent growth rate of {growth_rate}% and a current status of '{status}'. A positive growth rate indicates that the recent comparison period is higher; a negative rate indicates that it is lower. Look at the historical chart for more context."
+    },
+    {
+      "topic": "prediction_limits",
+      "keywords": [
+        "reliable is this prediction",
+        "prediction limits",
+        "how reliable"
+      ],
+      "answer": "Larper's prediction is a simple estimate based on the trend data and rules used by the app. It cannot guarantee future popularity, views or sales. Data quality, platform differences and sudden events can all affect a trend. Use the result as one decision-making signal, not as certainty."
+    },
+    {
+      "topic": "content_ideas",
+      "keywords": [
+        "five unique ideas",
+        "unique ideas for this trend",
+        "what content should i create"
+      ],
+      "answer": "Here are five content ideas for {trend}:\n1. A beginner's guide: explain what it is and how to try it.\n2. An honest review: share what surprised you.\n3. Common mistakes: show what people should avoid.\n4. A personal story: explain why you tried it.\n5. A fresh twist: combine it with a hobby, local reference or unexpected perspective.\n\nPick the idea that best fits your audience and resources."
+    },
+    {
+      "topic": "beginner_idea",
+      "keywords": [
+        "beginner-friendly idea",
+        "beginner friendly idea"
+      ],
+      "answer": "Try a simple 'What is {trend} and why are people talking about it?' post. Explain it in your own words, show one example, and finish by asking viewers whether they would try it. You do not need expensive equipment to start."
+    },
+    {
+      "topic": "funny_idea",
+      "keywords": [
+        "funny content idea",
+        "funny idea"
+      ],
+      "answer": "Try a relatable expectation-versus-reality video about {trend}. Show what you thought would happen, then the real result. Keep the joke kind and relevant to the people who might enjoy the trend."
+    },
+    {
+      "topic": "educational_idea",
+      "keywords": [
+        "educational content idea",
+        "educational idea"
+      ],
+      "answer": "Make a short explainer about {trend}: what it is, why people are interested, three things a beginner should know, and one common misconception. Keep each point short and use examples your audience understands."
+    },
+    {
+      "topic": "low_budget_idea",
+      "keywords": [
+        "low-budget content idea",
+        "low budget content idea"
+      ],
+      "answer": "Try a low-budget version of {trend} using items, tools or locations you already have. Show the process and final result, and be honest about what worked. Avoid buying things just to make a post."
+    },
+    {
+      "topic": "short_video_idea",
+      "keywords": [
+        "short-video idea",
+        "short video idea"
+      ],
+      "answer": "Try this short-video structure for {trend}:\n• First 1–2 seconds: show the result or ask a surprising question.\n• Middle: demonstrate the trend or explain your experience.\n• Ending: share your honest takeaway and invite a relevant comment.\n\nAdapt the length to the platform and your audience."
+    },
+    {
+      "topic": "story_idea",
+      "keywords": [
+        "tells a story",
+        "story idea"
+      ],
+      "answer": "Tell a mini-story about {trend}: why you decided to try it, what you expected, what actually happened, and what you learned. A clear beginning, middle and ending can make the content feel more personal."
+    },
+    {
+      "topic": "fresh_angle",
+      "keywords": [
+        "unexpected angle",
+        "fresh angle"
+      ],
+      "answer": "To give {trend} a fresh angle, try one of these: focus on a specific audience, share an honest mistake, test a common claim, compare a budget version with a premium version, or connect it to a personal experience. The aim is to add something useful rather than simply copy a popular post."
+    },
+    {
+      "topic": "challenge_idea",
+      "keywords": [
+        "challenge idea"
+      ],
+      "answer": "Create a small, safe challenge related to {trend}, such as testing it for one day or trying three variations and rating them. Set clear rules, show the result, and avoid challenges that could put anyone at risk or require unnecessary spending."
+    },
+    {
+      "topic": "first_post",
+      "keywords": [
+        "what should i post first",
+        "post first"
+      ],
+      "answer": "For your first post about {trend}, introduce it briefly, explain why you are trying it, and show a simple example. Keep the first attempt manageable. You can use audience reactions to decide what to post next."
+    },
+    {
+      "topic": "series_idea",
+      "keywords": [
+        "content series idea",
+        "series idea"
+      ],
+      "answer": "Turn {trend} into a short series: Part 1 introduces it, Part 2 shares beginner tips, Part 3 shows your experience, Part 4 answers common questions, and Part 5 gives your final review. Only continue the series if you still have something useful to add."
+    },
+    {
+      "topic": "collab_idea",
+      "keywords": [
+        "collaboration idea",
+        "collab idea"
+      ],
+      "answer": "Try a collaboration where two people approach {trend} differently, then compare the experience or results. Agree on the format beforehand and make sure the idea suits both creators' audiences."
+    },
+    {
+      "topic": "personal_angle",
+      "keywords": [
+        "make this trend more personal",
+        "more personal"
+      ],
+      "answer": "Connect {trend} to your real life: why you tried it, what you liked or disliked, what surprised you, and whether you would do it again. Honest details can make the content more distinctive than a generic trend copy."
+    },
+    {
+      "topic": "seven_day_plan",
+      "keywords": [
+        "7-day content plan",
+        "7 day content plan",
+        "seven day plan"
+      ],
+      "answer": "Here is a simple 7-day plan for {trend}:\nDay 1: Introduce the trend and why you are trying it.\nDay 2: Share a beginner's guide.\nDay 3: Show your personal experience.\nDay 4: Explain a common mistake or misconception.\nDay 5: Try a fresh variation.\nDay 6: Answer a question people might have.\nDay 7: Review what worked and what you would change.\n\nAdjust the plan to your schedule and audience."
+    },
+    {
+      "topic": "views_potential",
+      "keywords": [
+        "get me more views",
+        "more views"
+      ],
+      "answer": "A trend can give you a topic people are interested in, but it cannot guarantee views. {trend} currently has a recent growth rate of {growth_rate}% and a status of '{status}'. Try a strong opening, make the content relevant to your audience, and review the results after posting."
+    },
+    {
+      "topic": "stand_out",
+      "keywords": [
+        "content stand out",
+        "make my content stand out"
+      ],
+      "answer": "To make your {trend} content stand out: add a personal opinion, show an unexpected result, focus on a specific audience, use a Malaysian or student-life perspective if relevant, or test a less common variation. Keep the core trend recognisable while giving people a reason to watch your version."
+    },
+    {
+      "topic": "strong_hook",
+      "keywords": [
+        "how should i start my video",
+        "start my video",
+        "strong hook"
+      ],
+      "answer": "Try opening your {trend} video with one of these: 'I tried this so you don't have to', 'Is this trend actually worth the hype?', or 'Three things I wish I knew before trying this'. Choose a hook that honestly matches what the video delivers."
+    },
+    {
+      "topic": "caption_hashtags",
+      "keywords": [
+        "caption should i use",
+        "hashtags should i use",
+        "what caption",
+        "what hashtags"
+      ],
+      "answer": "Caption ideas for {trend}:\n1. 'Would you try this? 👀'\n2. 'Let's see if the hype is real.'\n3. 'My honest take on {trend}.'\n\nFor hashtags, use the trend name plus a few tags that accurately describe your content and audience. Check what is currently relevant on your chosen platform instead of relying on a fixed list."
+    },
+    {
+      "topic": "engagement",
+      "keywords": [
+        "get more engagement",
+        "more engagement"
+      ],
+      "answer": "To encourage genuine engagement with {trend}, ask a specific question, invite people to share their experience, or ask them to choose between two relevant options. Reply thoughtfully to comments and avoid misleading engagement bait."
+    },
+    {
+      "topic": "target_audience",
+      "keywords": [
+        "audience should i target",
+        "which audience"
+      ],
+      "answer": "Choose an audience based on what {trend} is about and what you can genuinely offer. For example, you could focus on beginners, students, budget-conscious viewers or people already interested in the category '{category}'. Make the post useful to that group rather than trying to appeal to everyone."
+    },
+    {
+      "topic": "retention",
+      "keywords": [
+        "watch until the end",
+        "people watch until the end"
+      ],
+      "answer": "For {trend}, show the most interesting result or question early, remove unnecessary pauses, and make each part lead naturally to the next. Deliver on the promise made by your opening; do not hide the answer just to stretch the video."
+    },
+    {
+      "topic": "adapt_trend",
+      "keywords": [
+        "follow the trend exactly or change it",
+        "follow the trend exactly",
+        "change it"
+      ],
+      "answer": "Use the trend as a starting point rather than copying every detail. Keep the part people recognise, then adapt the format to your interests, audience, budget and personality. Make sure the change still makes sense for the trend."
+    },
+    {
+      "topic": "measure_success",
+      "keywords": [
+        "know if my post worked",
+        "post worked"
+      ],
+      "answer": "Before posting about {trend}, choose one or two goals, such as watch time, saves, comments or profile visits. After posting, compare those results with your usual posts. One post is not enough to prove that a trend will always work for you."
+    },
+    {
+      "topic": "competition_check",
+      "keywords": [
+        "trend oversaturated",
+        "too many people doing this trend",
+        "oversaturated"
+      ],
+      "answer": "Larper's status for {trend} is '{status}', but search-interest data alone cannot measure how many creators are competing. Search the trend on the platform where you plan to post, review recent posts, and see whether most use the same format. If they do, try a more specific audience or a fresh angle."
+    },
+    {
+      "topic": "compete_small_creator",
+      "keywords": [
+        "compete with bigger creators",
+        "bigger creators"
+      ],
+      "answer": "You do not need to copy larger creators. For {trend}, focus on a specific audience, useful detail, a relatable experience or a perspective that larger accounts may overlook. Make the post clear and valuable to the people you want to reach."
+    },
+    {
+      "topic": "check_competition",
+      "keywords": [
+        "less common version",
+        "room for new creators",
+        "check if this trend is crowded",
+        "everyone has already done it",
+        "trend is crowded"
+      ],
+      "answer": "To check competition for {trend}: search its name on your target platform, look at recent posts rather than only the most viral ones, note whether formats are repetitive, and check whether there are unanswered questions or audiences being overlooked. Larper's trend-interest data is not a direct count of competing creators."
+    },
+    {
+      "topic": "niche_angle",
+      "keywords": [
+        "use a niche angle",
+        "avoid looking like everyone else",
+        "niche angle"
+      ],
+      "answer": "A niche angle can help make {trend} more relevant to a particular group. You could focus on beginners, students, budget-conscious people or a local audience. Choose a group you understand and make the content genuinely useful to them."
+    },
+    {
+      "topic": "combine_trends",
+      "keywords": [
+        "combine this with another trend",
+        "combine this with another"
+      ],
+      "answer": "You could combine {trend} with another topic that naturally fits it, such as student life, food, personal finance, gaming or a hobby. Keep the connection clear; combining trends only helps if the result makes sense to your audience."
+    },
+    {
+      "topic": "spending_decision",
+      "keywords": [
+        "worth spending money on",
+        "buy something just because it is trending",
+        "spending money on"
+      ],
+      "answer": "Before spending money because of {trend}, consider your budget, how often you will use the item, whether you can borrow or try it first, and what happens if the trend fades. Larper's worth score is {worth_score}/100 and its estimated fading-risk score is {death_risk}/100, but these are trend-analysis estimates—not a product-quality rating or financial guarantee. Do not buy something you cannot comfortably afford."
+    },
+    {
+      "topic": "no_purchase",
+      "keywords": [
+        "try this trend on a budget",
+        "without buying new things",
+        "try this on a budget"
+      ],
+      "answer": "Try exploring {trend} with what you already own, borrowing an item where appropriate, using free tools, or making content about your experience without buying the product. You do not need to purchase something just to participate in a trend."
+    },
+    {
+      "topic": "student_budget",
+      "keywords": [
+        "consider before buying into this trend",
+        "wasting money on a short-lived trend",
+        "practical for students",
+        "decide if the trend fits my budget"
+      ],
+      "answer": "If you are a student considering {trend}, set a spending limit first and try a free or low-cost version. Think about whether you will still use the item after the trend becomes less popular. Participating is optional; your budget comes first."
+    },
+    {
+      "topic": "explain_worth_score",
+      "keywords": [
+        "does a high worth score mean i should buy it",
+        "high worth score"
+      ],
+      "answer": "Larper's worth score for {trend} is {worth_score}/100. It is an app-generated heuristic about the trend's current potential, not a guarantee of popularity, profit or product value. A high score does not automatically mean you should buy something or invest money."
+    },
+    {
+      "topic": "low_cost_alternative",
+      "keywords": [
+        "suggest a cheaper alternative approach",
+        "cheaper alternative approach",
+        "cheaper alternative"
+      ],
+      "answer": "For a lower-cost approach to {trend}, try using items you already own, choosing a DIY version, borrowing equipment, or focusing on explaining/reviewing the trend rather than buying everything associated with it. Compare costs before committing."
+    },
+    {
+      "topic": "similar_trend",
+      "keywords": [
+        "similar trend with less competition",
+        "similar trend"
+      ],
+      "answer": "To find an alternative to {trend}, explore related topics in the '{category}' category and look for ones with increasing recent interest. Larper can analyse trends that are in its dataset; it cannot recommend a trend that is not included unless your app has another discovery source. Search another trend in Larper to compare its individual statistics."
+    },
+    {
+      "topic": "next_trend",
+      "keywords": [
+        "what trend should i explore next",
+        "explore next"
+      ],
+      "answer": "Start by exploring another trend in the same category as {trend}, then check its status, recent growth rate and historical chart. Look for a topic that fits your interests and audience rather than choosing only because its score is high."
+    },
+    {
+      "topic": "find_emerging",
+      "keywords": [
+        "suggest something similar in this category",
+        "find an emerging trend",
+        "emerging trend"
+      ],
+      "answer": "To spot an emerging trend, look for topics whose interest has recently begun increasing, check recent posts on the platforms you use, and notice repeated questions or new formats. Larper can only analyse trends present in its current dataset, and a rise in search interest does not guarantee future success."
+    },
+    {
+      "topic": "malaysian_angle",
+      "keywords": [
+        "recommend a trend for malaysian audiences",
+        "adapt this trend to malaysian culture",
+        "malaysian audiences",
+        "malaysian culture"
+      ],
+      "answer": "You could adapt {trend} for Malaysian audiences by connecting it to local food, student life, familiar daily experiences, local price comparisons or Malaysian humour—if that connection feels natural. Keep the idea respectful and relevant rather than adding a local reference only for attention."
+    },
+    {
+      "topic": "student_angle",
+      "keywords": [
+        "connect this trend to student life",
+        "student life"
+      ],
+      "answer": "For a student-life version of {trend}, try connecting it to campus routines, assignments, budgeting, studying with friends or university experiences. Choose a situation that feels authentic to you and avoid sharing private information about others without permission."
+    },
+    {
+      "topic": "compare_trends",
+      "keywords": [
+        "related topics could i combine with this trend",
+        "compare this trend with another one",
+        "compare this trend"
+      ],
+      "answer": "Larper is designed to show the analysis of one selected trend at a time. To compare two trends, search each separately and note their status, growth rate, estimated fading risk and worth score. These are heuristic indicators, so also consider relevance to your audience and the effort required."
+    },
+    {
+      "topic": "declining_action",
+      "keywords": [
+        "if this trend is declining",
+        "trend is declining"
+      ],
+      "answer": "If {trend} appears to be declining, avoid investing too much in it immediately. You could try a fresh angle, make one low-effort post, or explore a related trend with stronger recent interest. Larper currently shows a growth rate of {growth_rate}% and a status of '{status}', but future interest may change."
+    }
+  ]
+}
