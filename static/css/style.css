@@ -2853,3 +2853,35 @@ footer {
     }
 
 }
+
+/* =========================================================
+LARPER PASTEL RECOMMENDATION COLOURS
+========================================================= */
+
+/* JOIN NOW - Sage Green */
+.recommendation-box.join {
+    background: #DEF1E5;
+    border: 1px solid #C6E3D0;
+    color: #426650;
+}
+
+/* TRY SOMETHING SIMILAR - Pastel Purple */
+.recommendation-box.similar {
+    background: #EEE5FF;
+    border: 1px solid #D8C8F5;
+    color: #7054A6;
+}
+
+/* SKIP - Pastel Pink */
+.recommendation-box.skip {
+    background: #FBE1EA;
+    border: 1px solid #F0C9D8;
+    color: #984F6A;
+}
+
+/* Keep recommendation labels readable */
+.recommendation-box.join .metric-label,
+.recommendation-box.similar .metric-label,
+.recommendation-box.skip .metric-label {
+    color: inherit;
+}
