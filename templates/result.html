@@ -168,22 +168,23 @@
 
             <!-- RECOMMENDATION -->
 
-            <div class="recommendation-box">
-
+            <div class="recommendation-box
+    {% if result.recommendation == 'JOIN NOW' %}
+        join
+    {% elif result.recommendation == 'TRY SOMETHING SIMILAR' %}
+        similar
+    {% else %}
+        skip
+    {% endif %}
+">
 
                 <div class="metric-label">
-
                     OUR RECOMMENDATION
-
                 </div>
-
 
                 <div class="recommendation-text">
-
                     {{ result.recommendation }}
-
                 </div>
-
 
             </div>
 
