@@ -5,6 +5,10 @@ from pathlib import Path
 from predictor import analyze_trend
 
 
+# =========================================================
+# APP
+# =========================================================
+
 app = Flask(__name__)
 
 
@@ -17,29 +21,70 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = (
         BASE_DIR
         / "data"
-        / "larper_master.csv"
+        / "LARPER_template.xlsx"
 )
 
 
 # =========================================================
-# LOAD OPTIONS
+# LOAD SOCIAL DATA FOR DROPDOWNS
+# =========================================================
+
+def load_social_data():
+
+    df = pd.read_excel(
+        DATA_FILE,
+        sheet_name="Social Metrics"
+    )
+
+    df.columns = (
+        df.columns
+        .astype(str)
+        .str.strip()
+        .str.lower()
+    )
+
+    df["trend_name"] = (
+        df["trend_name"]
+        .astype(str)
+        .str.strip()
+    )
+
+    df["category"] = (
+        df["category"]
+        .astype(str)
+        .str.strip()
+    )
+
+    return df
+
+
+# =========================================================
+# CATEGORY LIST
 # =========================================================
 
 def get_categories():
 
-    df = pd.read_csv(DATA_FILE)
+    df = load_social_data()
 
-    return sorted(
+    categories = (
         df["category"]
         .dropna()
         .unique()
         .tolist()
     )
 
+    return sorted(
+        categories
+    )
 
-def get_trends():
 
-    df = pd.read_csv(DATA_FILE)
+# =========================================================
+# TREND OPTIONS BY CATEGORY
+# =========================================================
+
+def get_trend_options():
+
+    df = load_social_data()
 
     options = {}
 
@@ -59,13 +104,15 @@ def get_trends():
             .tolist()
         )
 
-        options[category] = sorted(trends)
+        options[category] = sorted(
+            trends
+        )
 
     return options
 
 
 # =========================================================
-# HOME
+# HOME PAGE
 # =========================================================
 
 @app.route("/")
@@ -77,7 +124,7 @@ def home():
 
 
 # =========================================================
-# CHECK TREND
+# CHECK TREND PAGE
 # =========================================================
 
 @app.route(
@@ -90,28 +137,52 @@ def home():
 def check():
 
     categories = get_categories()
-    trend_options = get_trends()
+
+    trend_options = (
+        get_trend_options()
+    )
 
 
     if request.method == "POST":
 
         trend = request.form.get(
-            "trend"
-        )
+            "trend",
+            ""
+        ).strip()
 
-        if not trend:
+        purpose = request.form.get(
+            "purpose",
+            ""
+        ).strip()
+
+
+        # ---------------------------------------------
+        # VALIDATION
+        # ---------------------------------------------
+
+        if trend == "":
 
             return render_template(
-
                 "check.html",
-
                 categories=categories,
-
                 trend_options=trend_options,
-
                 error="Please select a trend."
             )
 
+
+        if purpose == "":
+
+            return render_template(
+                "check.html",
+                categories=categories,
+                trend_options=trend_options,
+                error="Please choose what you want to use the trend for."
+            )
+
+
+        # ---------------------------------------------
+        # RUN PREDICTOR
+        # ---------------------------------------------
 
         result = analyze_trend(
             trend
@@ -121,15 +192,15 @@ def check():
         if "error" in result:
 
             return render_template(
-
                 "check.html",
-
                 categories=categories,
-
                 trend_options=trend_options,
-
                 error=result["error"]
             )
+
+
+        # Add purpose to result
+        result["purpose"] = purpose
 
 
         return render_template(
@@ -139,17 +210,26 @@ def check():
 
 
     return render_template(
-
         "check.html",
-
         categories=categories,
-
         trend_options=trend_options
     )
 
 
 # =========================================================
-# START
+# COLLECTION PAGE
+# =========================================================
+
+@app.route("/collection")
+def collection():
+
+    return render_template(
+        "collection.html"
+    )
+
+
+# =========================================================
+# RUN
 # =========================================================
 
 if __name__ == "__main__":

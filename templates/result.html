@@ -14,7 +14,6 @@
         {{ result.trend }} | LARPER
     </title>
 
-
     <link
             rel="stylesheet"
             href="{{ url_for('static', filename='css/style.css') }}"
@@ -35,7 +34,6 @@
 
     <nav class="navbar">
 
-
         <a
                 href="/"
                 class="brand"
@@ -46,7 +44,6 @@
                 ✦
             </div>
 
-
             <div class="brand-name">
                 LARPER
             </div>
@@ -54,63 +51,71 @@
         </a>
 
 
-
         <div class="nav-links">
-
 
             <a href="/">
                 Home
             </a>
 
+            <a href="/collection">
+                Collection
+            </a>
 
-            <a href="/check">
+            <a
+                    href="/check"
+                    class="nav-button"
+            >
                 Check another trend
             </a>
 
-
         </div>
-
 
     </nav>
 
 
 
     <!-- ==================================================
-         RESULT
+         RESULT PAGE
     =================================================== -->
 
     <main class="result-page">
 
 
-        <!-- TOP -->
+        <!-- =============================================
+             HEADER
+        ============================================== -->
 
         <div class="result-top">
 
-
             <div>
-
 
                 <div class="section-label">
                     TREND ANALYSIS
                 </div>
 
-
                 <div class="result-category">
-
                     {{ result.category }}
-
                 </div>
 
-
                 <h1>
-
                     {{ result.trend }}
-
                 </h1>
 
+                {% if result.purpose %}
+
+                <div
+                        style="
+                            margin-top: 12px;
+                            color: #77717E;
+                            font-size: 13px;
+                        "
+                >
+                    For: {{ result.purpose }}
+                </div>
+
+                {% endif %}
 
             </div>
-
 
 
             <button
@@ -118,121 +123,82 @@
                     class="save-button"
                     onclick="saveTrend()"
             >
-
                 ♡ Save to Collection
-
             </button>
-
 
         </div>
 
 
 
-        <!-- ==================================================
+        <!-- =============================================
              STATUS + RECOMMENDATION
-        =================================================== -->
+        ============================================== -->
 
         <section class="status-hero">
 
 
-            <!-- STATUS -->
-
             <div class="status-left">
 
-
                 <div class="metric-label">
-
                     TREND STATUS
-
                 </div>
-
 
                 <div class="big-status">
-
                     {{ result.trend_status }}
-
                 </div>
 
-
                 <p>
-
-                    Based on recent search-interest
-                    movement and momentum.
-
+                    Based on public social engagement signals,
+                    momentum and recent content performance.
                 </p>
-
 
             </div>
 
-
-
-            <!-- RECOMMENDATION -->
 
             <div class="recommendation-box">
 
-
                 <div class="metric-label">
-
                     OUR RECOMMENDATION
-
                 </div>
-
 
                 <div class="recommendation-text">
-
                     {{ result.recommendation }}
-
                 </div>
 
-
             </div>
-
 
         </section>
 
 
 
-        <!-- ==================================================
-             METRICS
-        =================================================== -->
+        <!-- =============================================
+             MAIN METRICS
+        ============================================== -->
 
         <section class="metric-grid">
 
 
-            <!-- GROWTH SPEED -->
+            <!-- GROWTH -->
 
             <div class="metric-card">
 
-
                 <div class="metric-label">
-
                     HOW FAST IS IT GROWING?
-
                 </div>
-
 
                 <div class="metric-number">
 
-
                     {% if result.growth_rate > 0 %}
-
                     +
-
                     {% endif %}
-
 
                     {{ result.growth_rate }}%
 
-
                 </div>
-
 
                 <div class="metric-description">
-
                     {{ result.growth_speed }}
-
                 </div>
-
 
             </div>
 
@@ -242,36 +208,25 @@
 
             <div class="metric-card">
 
-
                 <div class="metric-label">
-
                     CHANCE IT WILL DIE SOON
-
                 </div>
-
 
                 <div class="metric-number">
-
                     {{ result.death_risk }}%
-
                 </div>
 
-
                 <div class="progress-bar">
-
 
                     <div
                             class="progress-fill risk-fill"
                             style="
-                            width:
-                            {{ result.death_risk }}%;
+                            width: {{ result.death_risk }}%;
                         "
                     >
                     </div>
 
-
                 </div>
-
 
             </div>
 
@@ -281,13 +236,9 @@
 
             <div class="metric-card">
 
-
                 <div class="metric-label">
-
                     WORTH JOINING?
-
                 </div>
-
 
                 <div class="metric-number">
 
@@ -299,72 +250,368 @@
 
                 </div>
 
-
                 <div class="progress-bar">
-
 
                     <div
                             class="progress-fill worth-fill"
                             style="
-                            width:
-                            {{ result.worth_score }}%;
+                            width: {{ result.worth_score }}%;
                         "
                     >
                     </div>
 
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =============================================
+             SOCIAL SIGNALS
+        ============================================== -->
+
+        <section
+                class="why-section"
+                style="margin-top: 22px;"
+        >
+
+            <div class="section-label">
+                SOCIAL SIGNALS
+            </div>
+
+            <h2>
+                What people are doing with this trend
+            </h2>
+
+
+            <div class="metric-grid">
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        TOTAL VIEWS
+                    </div>
+
+                    <div class="metric-number">
+                        {{ "{:,}".format(result.total_views) }}
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        TOTAL LIKES
+                    </div>
+
+                    <div class="metric-number">
+                        {{ "{:,}".format(result.total_likes) }}
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        TOTAL COMMENTS
+                    </div>
+
+                    <div class="metric-number">
+                        {{ "{:,}".format(result.total_comments) }}
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        TOTAL SHARES
+                    </div>
+
+                    <div class="metric-number">
+                        {{ "{:,}".format(result.total_shares) }}
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        ENGAGEMENT RATE
+                    </div>
+
+                    <div class="metric-number">
+                        {{ result.engagement_rate }}%
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        SHARE RATE
+                    </div>
+
+                    <div class="metric-number">
+                        {{ result.share_rate }}%
+                    </div>
 
                 </div>
 
 
             </div>
 
-
         </section>
 
 
 
-        <!-- ==================================================
+        <!-- =============================================
              WHY
-        =================================================== -->
+        ============================================== -->
 
         <section class="why-section">
 
-
             <div class="section-label">
-
                 WHY IS LARPER SAYING THIS?
-
             </div>
 
-
             <h2>
-
                 The signals behind the decision
-
             </h2>
-
 
 
             <div class="reason-list">
 
-
                 {% for reason in result.reasons %}
 
-
                 <div class="reason">
-
 
                     <div class="reason-icon">
                         ✦
                     </div>
 
-
                     <div>
-
                         {{ reason }}
-
                     </div>
 
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =============================================
+             REFERENCE POSTS
+        ============================================== -->
+
+        <section
+                class="why-section"
+                style="margin-top: 30px;"
+        >
+
+            <div class="section-label">
+                TREND REFERENCES
+            </div>
+
+            <h2>
+                See what people are posting
+            </h2>
+
+
+            {% if result.references %}
+
+            <div
+                    class="reference-grid"
+                    style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 18px;
+                    "
+            >
+
+
+                {% for video in result.references %}
+
+
+                <div
+                        class="reference-card"
+                        style="
+                                background: #FCFAF7;
+                                border-radius: 18px;
+                                overflow: hidden;
+                                border: 1px solid #EEE7DF;
+                            "
+                >
+
+
+                    <!-- THUMBNAIL -->
+
+                    {% if video.thumbnail_url %}
+
+                    <img
+                            src="{{ video.thumbnail_url }}"
+                            alt="{{ video.content_title }}"
+                            style="
+                                        width: 100%;
+                                        height: 220px;
+                                        object-fit: cover;
+                                        display: block;
+                                    "
+                    >
+
+                    {% else %}
+
+                    <div
+                            style="
+                                        height: 220px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        background: #EEE6FF;
+                                        color: #8D6DE6;
+                                        font-size: 35px;
+                                    "
+                    >
+                        ✦
+                    </div>
+
+                    {% endif %}
+
+
+                    <!-- CONTENT -->
+
+                    <div
+                            style="
+                                    padding: 18px;
+                                "
+                    >
+
+
+                        <div
+                                style="
+                                        color: #8D6DE6;
+                                        font-size: 10px;
+                                        font-weight: 700;
+                                        letter-spacing: 1px;
+                                        text-transform: uppercase;
+                                        margin-bottom: 8px;
+                                    "
+                        >
+
+                            {% if video.platform %}
+                            {{ video.platform }}
+                            {% else %}
+                            Social Media
+                            {% endif %}
+
+                        </div>
+
+
+                        <h3
+                                style="
+                                        margin: 0;
+                                        font-family: 'Playfair Display', Georgia, serif;
+                                        font-size: 21px;
+                                        line-height: 1.2;
+                                    "
+                        >
+
+                            {% if video.content_title %}
+                            {{ video.content_title }}
+                            {% else %}
+                            Trend Reference
+                            {% endif %}
+
+                        </h3>
+
+
+                        <!-- STATS -->
+
+                        <div
+                                style="
+                                        margin-top: 15px;
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        gap: 7px;
+                                        color: #77717E;
+                                        font-size: 11px;
+                                    "
+                        >
+
+                                    <span>
+                                        👁 {{ "{:,}".format(video.views) }}
+                                    </span>
+
+                            <span>
+                                        ♡ {{ "{:,}".format(video.likes) }}
+                                    </span>
+
+                            <span>
+                                        💬 {{ "{:,}".format(video.comments) }}
+                                    </span>
+
+                            <span>
+                                        ↗ {{ "{:,}".format(video.shares) }}
+                                    </span>
+
+                        </div>
+
+
+                        <div
+                                style="
+                                        margin-top: 11px;
+                                        color: #77717E;
+                                        font-size: 10px;
+                                    "
+                        >
+                            Engagement:
+                            {{ video.engagement_rate }}%
+                        </div>
+
+
+                        <!-- WATCH BUTTON -->
+
+                        {% if video.content_url %}
+
+                        <a
+                                href="{{ video.content_url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="
+                                            margin-top: 17px;
+                                            width: 100%;
+                                            display: inline-flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            padding: 12px;
+                                            border-radius: 11px;
+                                            background: #292631;
+                                            color: white;
+                                            text-decoration: none;
+                                            font-size: 12px;
+                                            font-weight: 700;
+                                            box-sizing: border-box;
+                                        "
+                        >
+                            Watch Video →
+                        </a>
+
+                        {% endif %}
+
+
+                    </div>
 
                 </div>
 
@@ -375,24 +622,34 @@
             </div>
 
 
+            {% else %}
+
+            <p
+                    style="
+                        color: #77717E;
+                    "
+            >
+                No reference posts are available yet.
+            </p>
+
+            {% endif %}
+
+
         </section>
 
 
 
-        <!-- ==================================================
-             ACTIONS
-        =================================================== -->
+        <!-- =============================================
+             BOTTOM ACTIONS
+        ============================================== -->
 
         <div class="result-actions">
-
 
             <a
                     href="/check"
                     class="secondary-button"
             >
-
                 ← Check another trend
-
             </a>
 
 
@@ -400,11 +657,8 @@
                     onclick="saveTrend()"
                     class="main-button"
             >
-
                 ♡ Save to Collection
-
             </button>
-
 
         </div>
 
@@ -417,7 +671,7 @@
 
 
 <!-- ==================================================
-     SAVE TO COLLECTION USING LOCAL STORAGE
+     SAVE TO COLLECTION
 =================================================== -->
 
 <script>
@@ -425,38 +679,38 @@
 
     const trendResult = {
 
-
         trend:
             {{ result.trend | tojson }},
-
 
     category:
     {{ result.category | tojson }},
 
+    purpose:
+    {{ result.purpose | tojson }},
 
     status:
     {{ result.trend_status | tojson }},
 
-
     growthRate:
     {{ result.growth_rate }},
-
 
     growthSpeed:
     {{ result.growth_speed | tojson }},
 
-
     deathRisk:
     {{ result.death_risk }},
-
 
     worthScore:
     {{ result.worth_score }},
 
-
     recommendation:
-    {{ result.recommendation | tojson }}
+    {{ result.recommendation | tojson }},
 
+    totalViews:
+    {{ result.total_views }},
+
+    engagementRate:
+    {{ result.engagement_rate }}
 
     };
 
@@ -484,7 +738,6 @@
 
         if (!alreadySaved) {
 
-
             collection.push(
                 trendResult
             );
@@ -497,12 +750,10 @@
                 )
             );
 
-
         }
 
 
         updateSaveButtons();
-
 
     }
 
@@ -530,7 +781,6 @@
 
         if (saved) {
 
-
             const buttons =
                 document.querySelectorAll(
                     ".save-button, .result-actions .main-button"
@@ -540,17 +790,13 @@
             buttons.forEach(
                 button => {
 
-
                     button.innerHTML =
                         "✓ Saved to Collection";
-
 
                 }
             );
 
-
         }
-
 
     }
 
@@ -560,9 +806,7 @@
         "load",
         function () {
 
-
             updateSaveButtons();
-
 
         }
     );
