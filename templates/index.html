@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>LARPER</title>
+
+    <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+            <div class="brand-name">
+                LARPER
+            </div>
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#how">
+                How it works
+            </a>
+
+            <a href="#categories">
+                Explore trends
+            </a>
+
+            <a
+                    href="#check"
+                    class="nav-button"
+            >
+                Check a trend
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section
+            class="hero"
+            id="how"
+    >
+
+
+        <!-- LEFT -->
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                ✦ YOUR TREND DECISION SIDEKICK
+            </div>
+
+
+            <h1 class="hero-title">
+
+                Should I join
+                this trend?
+
+                <span>
+                    Or am I already
+                    too late?
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                LARPER helps creators and small businesses
+                understand whether a trend is still growing,
+                already crowded, or beginning to fade.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                        href="#check"
+                        class="main-button"
+                >
+                    Check a Trend
+                    <span>→</span>
+                </a>
+
+
+                <div class="powered-note">
+
+                    <span class="spark">
+                        ✦
+                    </span>
+
+                    <span>
+                        Powered by search and<br>
+                        engagement signals
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT GRAPH -->
+
+        <div class="hero-visual">
+
+            <div class="graph-card">
+
+
+                <!-- decorations -->
+
+                <div class="blue-circle"></div>
+
+                <div class="green-circle"></div>
+
+
+                <div class="graph-title">
+
+                    <span>✦</span>
+
+                    A trend's journey
+
+                </div>
+
+
+                <div class="live-badge">
+
+                    <span class="live-dot"></span>
+
+                    LIVE SIGNALS
+
+                </div>
+
+
+
+                <!-- current point label -->
+
+                <div class="current-point">
+
+                    <div class="eye-icon">
+                        ◉
+                    </div>
+
+                    <div>
+                        Know where<br>
+                        your trend<br>
+                        stands
+                    </div>
+
+                </div>
+
+
+
+                <!-- CURVE -->
+
+                <svg
+                        class="trend-chart"
+                        viewBox="0 0 700 310"
+                        preserveAspectRatio="none"
+                >
+
+                    <defs>
+
+                        <linearGradient
+                                id="trendGradient"
+                                x1="0%"
+                                x2="100%"
+                        >
+
+                            <stop
+                                    offset="0%"
+                                    stop-color="#7CBC93"
+                            />
+
+                            <stop
+                                    offset="47%"
+                                    stop-color="#8F72DF"
+                            />
+
+                            <stop
+                                    offset="100%"
+                                    stop-color="#E5789B"
+                            />
+
+                        </linearGradient>
+
+                    </defs>
+
+
+                    <!-- soft background line -->
+
+                    <path
+                            d="
+                        M20 252
+                        C100 247 130 215 190 204
+                        C255 192 270 113 350 94
+                        C430 77 470 132 520 168
+                        C575 208 620 232 680 253
+                        "
+                            fill="none"
+                            stroke="#EFE8F3"
+                            stroke-width="26"
+                            stroke-linecap="round"
+                    />
+
+
+                    <!-- coloured line -->
+
+                    <path
+                            d="
+                        M20 252
+                        C100 247 130 215 190 204
+                        C255 192 270 113 350 94
+                        C430 77 470 132 520 168
+                        C575 208 620 232 680 253
+                        "
+                            fill="none"
+                            stroke="url(#trendGradient)"
+                            stroke-width="10"
+                            stroke-linecap="round"
+                    />
+
+                </svg>
+
+
+
+                <!-- stages -->
+
+                <div class="stages">
+
+                    <div class="stage">
+
+                        <div class="stage-dot green-one"></div>
+
+                        <span>
+                            Just Starting
+                        </span>
+
+                    </div>
+
+
+                    <div class="stage">
+
+                        <div class="stage-dot green-two"></div>
+
+                        <span>
+                            Growing Fast
+                        </span>
+
+                    </div>
+
+
+                    <div class="stage">
+
+                        <div class="stage-dot purple"></div>
+
+                        <span>
+                            Very Popular
+                        </span>
+
+                    </div>
+
+
+                    <div class="stage">
+
+                        <div class="stage-dot pink-one"></div>
+
+                        <span>
+                            Too Crowded
+                        </span>
+
+                    </div>
+
+
+                    <div class="stage">
+
+                        <div class="stage-dot pink-two"></div>
+
+                        <span>
+                            Losing Popularity
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CATEGORIES
+    ========================== -->
+
+    <section
+            class="categories"
+            id="categories"
+    >
+
+
+        <div class="categories-heading">
+
+
+            <div>
+
+                <div class="section-label">
+                    WHAT'S ON YOUR MIND?
+                </div>
+
+
+                <h2>
+                    Explore your kind of trend
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                From menu ideas to your next viral post,
+                LARPER helps you know when to make your move.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="category-grid">
+
+
+            <!-- FOOD -->
+
+            <div class="category-card food">
+
+                <div class="category-icon">
+                    ☕
+                </div>
+
+
+                <div class="category-bottom">
+
+                    <span>
+                        Food
+                    </span>
+
+                    <button>
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HANDCRAFT -->
+
+            <div class="category-card handcraft">
+
+                <div class="category-icon">
+                    ✎
+                </div>
+
+
+                <div class="category-bottom">
+
+                    <span>
+                        Handcraft
+                    </span>
+
+                    <button>
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LIFESTYLE -->
+
+            <div class="category-card lifestyle">
+
+                <div class="category-icon">
+                    ♧
+                </div>
+
+
+                <div class="category-bottom">
+
+                    <span>
+                        Lifestyle
+                    </span>
+
+                    <button>
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ENTERTAINMENT -->
+
+            <div class="category-card entertainment">
+
+                <div class="category-icon">
+                    ▣
+                </div>
+
+
+                <div class="category-bottom">
+
+                    <span>
+                        Entertainment
+                    </span>
+
+                    <button>
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GROWTH -->
+
+            <div class="category-card growth">
+
+                <div class="category-icon">
+                    ▥
+                </div>
+
+
+                <div class="category-bottom">
+
+                    <span>
+                        Growth
+                    </span>
+
+                    <button>
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CHECK SECTION
+    ========================== -->
+
+    <section
+            class="check-section"
+            id="check"
+    >
+
+        <div class="section-label">
+            READY TO CHECK?
+        </div>
+
+
+        <h2>
+            Is your trend still worth joining?
+        </h2>
+
+
+        <p>
+
+            Choose a trend and LARPER will show
+            its current status, AI prediction,
+            and what you should do next.
+
+        </p>
+
+
+        <a
+                href="#"
+                class="main-button"
+        >
+            Start Checking
+            <span>→</span>
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+            <div class="brand-name">
+                LARPER
+            </div>
+
+        </div>
+
+
+        <div class="footer-message">
+            Smart trend decisions, made simple.
+        </div>
+
+
+        <div class="footer-copy">
+            © 2026 LARPER
+        </div>
+
+
+    </footer>
+
+
+</div>
+
+</body>
+
+</html>
