@@ -2885,3 +2885,39 @@ LARPER PASTEL RECOMMENDATION COLOURS
 .recommendation-box.skip .metric-label {
     color: inherit;
 }
+/* =========================================================
+   REFERENCE POSTS
+========================================================= */
+
+.reference-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.reference-card {
+    min-width: 0;
+}
+
+.reference-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+    .reference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .reference-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
