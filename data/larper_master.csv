@@ -1,0 +1,1030 @@
+date,trend_name,category,search_interest
+2026-10-03 04:00:00+00:00,Dota,Entertainment,7
+2026-10-03 08:00:00+00:00,Dota,Entertainment,9
+2026-10-03 12:00:00+00:00,Dota,Entertainment,14
+2026-10-03 16:00:00+00:00,Dota,Entertainment,23
+2026-10-03 20:00:00+00:00,Dota,Entertainment,13
+2026-10-04 00:00:00+00:00,Dota,Entertainment,10
+2026-10-04 04:00:00+00:00,Dota,Entertainment,9
+2026-10-04 08:00:00+00:00,Dota,Entertainment,9
+2026-10-04 12:00:00+00:00,Dota,Entertainment,10
+2026-10-04 16:00:00+00:00,Dota,Entertainment,13
+2026-10-04 20:00:00+00:00,Dota,Entertainment,6
+2026-10-05 00:00:00+00:00,Dota,Entertainment,4
+2026-10-05 04:00:00+00:00,Dota,Entertainment,5
+2026-10-05 08:00:00+00:00,Dota,Entertainment,8
+2026-10-05 12:00:00+00:00,Dota,Entertainment,9
+2026-10-05 16:00:00+00:00,Dota,Entertainment,12
+2026-10-05 20:00:00+00:00,Dota,Entertainment,6
+2026-10-06 00:00:00+00:00,Dota,Entertainment,4
+2026-10-06 04:00:00+00:00,Dota,Entertainment,5
+2026-10-06 08:00:00+00:00,Dota,Entertainment,7
+2026-10-06 12:00:00+00:00,Dota,Entertainment,10
+2026-10-06 16:00:00+00:00,Dota,Entertainment,15
+2026-10-06 20:00:00+00:00,Dota,Entertainment,8
+2026-10-07 00:00:00+00:00,Dota,Entertainment,17
+2026-10-07 04:00:00+00:00,Dota,Entertainment,18
+2026-10-07 08:00:00+00:00,Dota,Entertainment,13
+2026-10-07 12:00:00+00:00,Dota,Entertainment,15
+2026-10-07 16:00:00+00:00,Dota,Entertainment,21
+2026-10-07 20:00:00+00:00,Dota,Entertainment,10
+2026-10-08 00:00:00+00:00,Dota,Entertainment,8
+2026-10-08 04:00:00+00:00,Dota,Entertainment,10
+2026-10-08 08:00:00+00:00,Dota,Entertainment,13
+2026-10-08 12:00:00+00:00,Dota,Entertainment,16
+2026-10-08 16:00:00+00:00,Dota,Entertainment,31
+2026-10-08 20:00:00+00:00,Dota,Entertainment,14
+2026-10-09 00:00:00+00:00,Dota,Entertainment,8
+2026-10-09 04:00:00+00:00,Dota,Entertainment,7
+2026-10-09 08:00:00+00:00,Dota,Entertainment,11
+2026-10-09 12:00:00+00:00,Dota,Entertainment,14
+2026-10-09 16:00:00+00:00,Dota,Entertainment,22
+2026-10-09 20:00:00+00:00,Dota,Entertainment,14
+2026-10-10 00:00:00+00:00,Dota,Entertainment,12
+2026-10-10 04:00:00+00:00,Dota,Entertainment,9
+2026-10-03 04:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-03 08:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-03 12:00:00+00:00,Ghost Story,Entertainment,3
+2026-10-03 16:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-03 20:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-04 00:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-04 04:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-04 08:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-04 12:00:00+00:00,Ghost Story,Entertainment,3
+2026-10-04 16:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-04 20:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-05 00:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-05 04:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-05 08:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-05 12:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-05 16:00:00+00:00,Ghost Story,Entertainment,6
+2026-10-05 20:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-06 00:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-06 04:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-06 08:00:00+00:00,Ghost Story,Entertainment,1
+2026-10-06 12:00:00+00:00,Ghost Story,Entertainment,3
+2026-10-06 16:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-06 20:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-07 00:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-07 04:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-07 08:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-07 12:00:00+00:00,Ghost Story,Entertainment,1
+2026-10-07 16:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-07 20:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-08 00:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-08 04:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-08 08:00:00+00:00,Ghost Story,Entertainment,1
+2026-10-08 12:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-08 16:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-08 20:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-09 00:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-09 04:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-09 08:00:00+00:00,Ghost Story,Entertainment,2
+2026-10-09 12:00:00+00:00,Ghost Story,Entertainment,1
+2026-10-09 16:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-09 20:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-10 00:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-10 04:00:00+00:00,Ghost Story,Entertainment,0
+2026-10-03 04:00:00+00:00,Instagram,Entertainment,36
+2026-10-03 08:00:00+00:00,Instagram,Entertainment,41
+2026-10-03 12:00:00+00:00,Instagram,Entertainment,52
+2026-10-03 16:00:00+00:00,Instagram,Entertainment,57
+2026-10-03 20:00:00+00:00,Instagram,Entertainment,41
+2026-10-04 00:00:00+00:00,Instagram,Entertainment,38
+2026-10-04 04:00:00+00:00,Instagram,Entertainment,42
+2026-10-04 08:00:00+00:00,Instagram,Entertainment,40
+2026-10-04 12:00:00+00:00,Instagram,Entertainment,54
+2026-10-04 16:00:00+00:00,Instagram,Entertainment,59
+2026-10-04 20:00:00+00:00,Instagram,Entertainment,38
+2026-10-05 00:00:00+00:00,Instagram,Entertainment,33
+2026-10-05 04:00:00+00:00,Instagram,Entertainment,37
+2026-10-05 08:00:00+00:00,Instagram,Entertainment,45
+2026-10-05 12:00:00+00:00,Instagram,Entertainment,51
+2026-10-05 16:00:00+00:00,Instagram,Entertainment,54
+2026-10-05 20:00:00+00:00,Instagram,Entertainment,37
+2026-10-06 00:00:00+00:00,Instagram,Entertainment,32
+2026-10-06 04:00:00+00:00,Instagram,Entertainment,35
+2026-10-06 08:00:00+00:00,Instagram,Entertainment,43
+2026-10-06 12:00:00+00:00,Instagram,Entertainment,52
+2026-10-06 16:00:00+00:00,Instagram,Entertainment,58
+2026-10-06 20:00:00+00:00,Instagram,Entertainment,35
+2026-10-07 00:00:00+00:00,Instagram,Entertainment,32
+2026-10-07 04:00:00+00:00,Instagram,Entertainment,35
+2026-10-07 08:00:00+00:00,Instagram,Entertainment,40
+2026-10-07 12:00:00+00:00,Instagram,Entertainment,51
+2026-10-07 16:00:00+00:00,Instagram,Entertainment,55
+2026-10-07 20:00:00+00:00,Instagram,Entertainment,39
+2026-10-08 00:00:00+00:00,Instagram,Entertainment,34
+2026-10-08 04:00:00+00:00,Instagram,Entertainment,39
+2026-10-08 08:00:00+00:00,Instagram,Entertainment,43
+2026-10-08 12:00:00+00:00,Instagram,Entertainment,51
+2026-10-08 16:00:00+00:00,Instagram,Entertainment,55
+2026-10-08 20:00:00+00:00,Instagram,Entertainment,39
+2026-10-09 00:00:00+00:00,Instagram,Entertainment,38
+2026-10-09 04:00:00+00:00,Instagram,Entertainment,42
+2026-10-09 08:00:00+00:00,Instagram,Entertainment,37
+2026-10-09 12:00:00+00:00,Instagram,Entertainment,47
+2026-10-09 16:00:00+00:00,Instagram,Entertainment,52
+2026-10-09 20:00:00+00:00,Instagram,Entertainment,34
+2026-10-10 00:00:00+00:00,Instagram,Entertainment,34
+2026-10-10 04:00:00+00:00,Instagram,Entertainment,41
+2026-10-03 04:00:00+00:00,Investment,Entertainment,58
+2026-10-03 08:00:00+00:00,Investment,Entertainment,63
+2026-10-03 12:00:00+00:00,Investment,Entertainment,66
+2026-10-03 16:00:00+00:00,Investment,Entertainment,57
+2026-10-03 20:00:00+00:00,Investment,Entertainment,60
+2026-10-04 00:00:00+00:00,Investment,Entertainment,56
+2026-10-04 04:00:00+00:00,Investment,Entertainment,54
+2026-10-04 08:00:00+00:00,Investment,Entertainment,52
+2026-10-04 12:00:00+00:00,Investment,Entertainment,63
+2026-10-04 16:00:00+00:00,Investment,Entertainment,75
+2026-10-04 20:00:00+00:00,Investment,Entertainment,73
+2026-10-05 00:00:00+00:00,Investment,Entertainment,98
+2026-10-05 04:00:00+00:00,Investment,Entertainment,93
+2026-10-05 08:00:00+00:00,Investment,Entertainment,88
+2026-10-05 12:00:00+00:00,Investment,Entertainment,75
+2026-10-05 16:00:00+00:00,Investment,Entertainment,71
+2026-10-05 20:00:00+00:00,Investment,Entertainment,68
+2026-10-06 00:00:00+00:00,Investment,Entertainment,92
+2026-10-06 04:00:00+00:00,Investment,Entertainment,92
+2026-10-06 08:00:00+00:00,Investment,Entertainment,93
+2026-10-06 12:00:00+00:00,Investment,Entertainment,76
+2026-10-06 16:00:00+00:00,Investment,Entertainment,78
+2026-10-06 20:00:00+00:00,Investment,Entertainment,71
+2026-10-07 00:00:00+00:00,Investment,Entertainment,98
+2026-10-07 04:00:00+00:00,Investment,Entertainment,100
+2026-10-07 08:00:00+00:00,Investment,Entertainment,82
+2026-10-07 12:00:00+00:00,Investment,Entertainment,79
+2026-10-07 16:00:00+00:00,Investment,Entertainment,89
+2026-10-07 20:00:00+00:00,Investment,Entertainment,84
+2026-10-08 00:00:00+00:00,Investment,Entertainment,96
+2026-10-08 04:00:00+00:00,Investment,Entertainment,90
+2026-10-08 08:00:00+00:00,Investment,Entertainment,91
+2026-10-08 12:00:00+00:00,Investment,Entertainment,73
+2026-10-08 16:00:00+00:00,Investment,Entertainment,70
+2026-10-08 20:00:00+00:00,Investment,Entertainment,59
+2026-10-09 00:00:00+00:00,Investment,Entertainment,82
+2026-10-09 04:00:00+00:00,Investment,Entertainment,91
+2026-10-09 08:00:00+00:00,Investment,Entertainment,66
+2026-10-09 12:00:00+00:00,Investment,Entertainment,57
+2026-10-09 16:00:00+00:00,Investment,Entertainment,45
+2026-10-09 20:00:00+00:00,Investment,Entertainment,52
+2026-10-10 00:00:00+00:00,Investment,Entertainment,55
+2026-10-10 04:00:00+00:00,Investment,Entertainment,73
+2026-10-03 04:00:00+00:00,Mobile Legends,Entertainment,66
+2026-10-03 08:00:00+00:00,Mobile Legends,Entertainment,74
+2026-10-03 12:00:00+00:00,Mobile Legends,Entertainment,82
+2026-10-03 16:00:00+00:00,Mobile Legends,Entertainment,93
+2026-10-03 20:00:00+00:00,Mobile Legends,Entertainment,64
+2026-10-04 00:00:00+00:00,Mobile Legends,Entertainment,56
+2026-10-04 04:00:00+00:00,Mobile Legends,Entertainment,63
+2026-10-04 08:00:00+00:00,Mobile Legends,Entertainment,67
+2026-10-04 12:00:00+00:00,Mobile Legends,Entertainment,73
+2026-10-04 16:00:00+00:00,Mobile Legends,Entertainment,83
+2026-10-04 20:00:00+00:00,Mobile Legends,Entertainment,43
+2026-10-05 00:00:00+00:00,Mobile Legends,Entertainment,30
+2026-10-05 04:00:00+00:00,Mobile Legends,Entertainment,41
+2026-10-05 08:00:00+00:00,Mobile Legends,Entertainment,55
+2026-10-05 12:00:00+00:00,Mobile Legends,Entertainment,69
+2026-10-05 16:00:00+00:00,Mobile Legends,Entertainment,75
+2026-10-05 20:00:00+00:00,Mobile Legends,Entertainment,47
+2026-10-06 00:00:00+00:00,Mobile Legends,Entertainment,33
+2026-10-06 04:00:00+00:00,Mobile Legends,Entertainment,42
+2026-10-06 08:00:00+00:00,Mobile Legends,Entertainment,61
+2026-10-06 12:00:00+00:00,Mobile Legends,Entertainment,70
+2026-10-06 16:00:00+00:00,Mobile Legends,Entertainment,82
+2026-10-06 20:00:00+00:00,Mobile Legends,Entertainment,45
+2026-10-07 00:00:00+00:00,Mobile Legends,Entertainment,31
+2026-10-07 04:00:00+00:00,Mobile Legends,Entertainment,41
+2026-10-07 08:00:00+00:00,Mobile Legends,Entertainment,55
+2026-10-07 12:00:00+00:00,Mobile Legends,Entertainment,68
+2026-10-07 16:00:00+00:00,Mobile Legends,Entertainment,84
+2026-10-07 20:00:00+00:00,Mobile Legends,Entertainment,46
+2026-10-08 00:00:00+00:00,Mobile Legends,Entertainment,34
+2026-10-08 04:00:00+00:00,Mobile Legends,Entertainment,45
+2026-10-08 08:00:00+00:00,Mobile Legends,Entertainment,61
+2026-10-08 12:00:00+00:00,Mobile Legends,Entertainment,71
+2026-10-08 16:00:00+00:00,Mobile Legends,Entertainment,81
+2026-10-08 20:00:00+00:00,Mobile Legends,Entertainment,47
+2026-10-09 00:00:00+00:00,Mobile Legends,Entertainment,39
+2026-10-09 04:00:00+00:00,Mobile Legends,Entertainment,58
+2026-10-09 08:00:00+00:00,Mobile Legends,Entertainment,70
+2026-10-09 12:00:00+00:00,Mobile Legends,Entertainment,81
+2026-10-09 16:00:00+00:00,Mobile Legends,Entertainment,100
+2026-10-09 20:00:00+00:00,Mobile Legends,Entertainment,65
+2026-10-10 00:00:00+00:00,Mobile Legends,Entertainment,59
+2026-10-10 04:00:00+00:00,Mobile Legends,Entertainment,73
+2026-10-03 04:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-03 08:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-03 12:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-03 16:00:00+00:00,PUBG Mobile,Entertainment,4
+2026-10-03 20:00:00+00:00,PUBG Mobile,Entertainment,0
+2026-10-04 00:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-04 04:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-04 08:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-04 12:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-04 16:00:00+00:00,PUBG Mobile,Entertainment,4
+2026-10-04 20:00:00+00:00,PUBG Mobile,Entertainment,0
+2026-10-05 00:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-05 04:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-05 08:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-05 12:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-05 16:00:00+00:00,PUBG Mobile,Entertainment,4
+2026-10-05 20:00:00+00:00,PUBG Mobile,Entertainment,5
+2026-10-06 00:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-06 04:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-06 08:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-06 12:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-06 16:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-06 20:00:00+00:00,PUBG Mobile,Entertainment,0
+2026-10-07 00:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-07 04:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-07 08:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-07 12:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-07 16:00:00+00:00,PUBG Mobile,Entertainment,0
+2026-10-07 20:00:00+00:00,PUBG Mobile,Entertainment,4
+2026-10-08 00:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-08 04:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-08 08:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-08 12:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-08 16:00:00+00:00,PUBG Mobile,Entertainment,3
+2026-10-08 20:00:00+00:00,PUBG Mobile,Entertainment,0
+2026-10-09 00:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-09 04:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-09 08:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-09 12:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-09 16:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-09 20:00:00+00:00,PUBG Mobile,Entertainment,0
+2026-10-10 00:00:00+00:00,PUBG Mobile,Entertainment,1
+2026-10-10 04:00:00+00:00,PUBG Mobile,Entertainment,2
+2026-10-03 04:00:00+00:00,TikTok,Entertainment,84
+2026-10-03 08:00:00+00:00,TikTok,Entertainment,80
+2026-10-03 12:00:00+00:00,TikTok,Entertainment,92
+2026-10-03 16:00:00+00:00,TikTok,Entertainment,96
+2026-10-03 20:00:00+00:00,TikTok,Entertainment,77
+2026-10-04 00:00:00+00:00,TikTok,Entertainment,84
+2026-10-04 04:00:00+00:00,TikTok,Entertainment,86
+2026-10-04 08:00:00+00:00,TikTok,Entertainment,80
+2026-10-04 12:00:00+00:00,TikTok,Entertainment,95
+2026-10-04 16:00:00+00:00,TikTok,Entertainment,92
+2026-10-04 20:00:00+00:00,TikTok,Entertainment,70
+2026-10-05 00:00:00+00:00,TikTok,Entertainment,82
+2026-10-05 04:00:00+00:00,TikTok,Entertainment,83
+2026-10-05 08:00:00+00:00,TikTok,Entertainment,82
+2026-10-05 12:00:00+00:00,TikTok,Entertainment,96
+2026-10-05 16:00:00+00:00,TikTok,Entertainment,97
+2026-10-05 20:00:00+00:00,TikTok,Entertainment,75
+2026-10-06 00:00:00+00:00,TikTok,Entertainment,92
+2026-10-06 04:00:00+00:00,TikTok,Entertainment,80
+2026-10-06 08:00:00+00:00,TikTok,Entertainment,82
+2026-10-06 12:00:00+00:00,TikTok,Entertainment,94
+2026-10-06 16:00:00+00:00,TikTok,Entertainment,94
+2026-10-06 20:00:00+00:00,TikTok,Entertainment,76
+2026-10-07 00:00:00+00:00,TikTok,Entertainment,91
+2026-10-07 04:00:00+00:00,TikTok,Entertainment,85
+2026-10-07 08:00:00+00:00,TikTok,Entertainment,86
+2026-10-07 12:00:00+00:00,TikTok,Entertainment,95
+2026-10-07 16:00:00+00:00,TikTok,Entertainment,90
+2026-10-07 20:00:00+00:00,TikTok,Entertainment,76
+2026-10-08 00:00:00+00:00,TikTok,Entertainment,86
+2026-10-08 04:00:00+00:00,TikTok,Entertainment,86
+2026-10-08 08:00:00+00:00,TikTok,Entertainment,84
+2026-10-08 12:00:00+00:00,TikTok,Entertainment,100
+2026-10-08 16:00:00+00:00,TikTok,Entertainment,91
+2026-10-08 20:00:00+00:00,TikTok,Entertainment,73
+2026-10-09 00:00:00+00:00,TikTok,Entertainment,84
+2026-10-09 04:00:00+00:00,TikTok,Entertainment,85
+2026-10-09 08:00:00+00:00,TikTok,Entertainment,82
+2026-10-09 12:00:00+00:00,TikTok,Entertainment,100
+2026-10-09 16:00:00+00:00,TikTok,Entertainment,97
+2026-10-09 20:00:00+00:00,TikTok,Entertainment,73
+2026-10-10 00:00:00+00:00,TikTok,Entertainment,92
+2026-10-10 04:00:00+00:00,TikTok,Entertainment,90
+2026-10-03 04:00:00+00:00,Universe,Entertainment,15
+2026-10-03 08:00:00+00:00,Universe,Entertainment,15
+2026-10-03 12:00:00+00:00,Universe,Entertainment,17
+2026-10-03 16:00:00+00:00,Universe,Entertainment,21
+2026-10-03 20:00:00+00:00,Universe,Entertainment,12
+2026-10-04 00:00:00+00:00,Universe,Entertainment,14
+2026-10-04 04:00:00+00:00,Universe,Entertainment,13
+2026-10-04 08:00:00+00:00,Universe,Entertainment,16
+2026-10-04 12:00:00+00:00,Universe,Entertainment,17
+2026-10-04 16:00:00+00:00,Universe,Entertainment,19
+2026-10-04 20:00:00+00:00,Universe,Entertainment,12
+2026-10-05 00:00:00+00:00,Universe,Entertainment,8
+2026-10-05 04:00:00+00:00,Universe,Entertainment,9
+2026-10-05 08:00:00+00:00,Universe,Entertainment,10
+2026-10-05 12:00:00+00:00,Universe,Entertainment,14
+2026-10-05 16:00:00+00:00,Universe,Entertainment,13
+2026-10-05 20:00:00+00:00,Universe,Entertainment,10
+2026-10-06 00:00:00+00:00,Universe,Entertainment,7
+2026-10-06 04:00:00+00:00,Universe,Entertainment,9
+2026-10-06 08:00:00+00:00,Universe,Entertainment,12
+2026-10-06 12:00:00+00:00,Universe,Entertainment,16
+2026-10-06 16:00:00+00:00,Universe,Entertainment,21
+2026-10-06 20:00:00+00:00,Universe,Entertainment,13
+2026-10-07 00:00:00+00:00,Universe,Entertainment,9
+2026-10-07 04:00:00+00:00,Universe,Entertainment,11
+2026-10-07 08:00:00+00:00,Universe,Entertainment,13
+2026-10-07 12:00:00+00:00,Universe,Entertainment,14
+2026-10-07 16:00:00+00:00,Universe,Entertainment,18
+2026-10-07 20:00:00+00:00,Universe,Entertainment,11
+2026-10-08 00:00:00+00:00,Universe,Entertainment,8
+2026-10-08 04:00:00+00:00,Universe,Entertainment,11
+2026-10-08 08:00:00+00:00,Universe,Entertainment,13
+2026-10-08 12:00:00+00:00,Universe,Entertainment,13
+2026-10-08 16:00:00+00:00,Universe,Entertainment,21
+2026-10-08 20:00:00+00:00,Universe,Entertainment,16
+2026-10-09 00:00:00+00:00,Universe,Entertainment,9
+2026-10-09 04:00:00+00:00,Universe,Entertainment,11
+2026-10-09 08:00:00+00:00,Universe,Entertainment,11
+2026-10-09 12:00:00+00:00,Universe,Entertainment,13
+2026-10-09 16:00:00+00:00,Universe,Entertainment,11
+2026-10-09 20:00:00+00:00,Universe,Entertainment,10
+2026-10-10 00:00:00+00:00,Universe,Entertainment,12
+2026-10-10 04:00:00+00:00,Universe,Entertainment,17
+2026-10-03 04:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-03 08:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-03 12:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-03 16:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-03 20:00:00+00:00,Xiaohongshu,Entertainment,2
+2026-10-04 00:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-04 04:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-04 08:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-04 12:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-04 16:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-04 20:00:00+00:00,Xiaohongshu,Entertainment,2
+2026-10-05 00:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-05 04:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-05 08:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-05 12:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-05 16:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-05 20:00:00+00:00,Xiaohongshu,Entertainment,2
+2026-10-06 00:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-06 04:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-06 08:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-06 12:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-06 16:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-06 20:00:00+00:00,Xiaohongshu,Entertainment,2
+2026-10-07 00:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-07 04:00:00+00:00,Xiaohongshu,Entertainment,5
+2026-10-07 08:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-07 12:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-07 16:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-07 20:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-08 00:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-08 04:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-08 08:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-08 12:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-08 16:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-08 20:00:00+00:00,Xiaohongshu,Entertainment,2
+2026-10-09 00:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-09 04:00:00+00:00,Xiaohongshu,Entertainment,4
+2026-10-09 08:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-09 12:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-09 16:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-09 20:00:00+00:00,Xiaohongshu,Entertainment,2
+2026-10-10 00:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-10 04:00:00+00:00,Xiaohongshu,Entertainment,3
+2026-10-03 04:00:00+00:00,Ayam Gepuk,Food,100
+2026-10-03 08:00:00+00:00,Ayam Gepuk,Food,72
+2026-10-03 12:00:00+00:00,Ayam Gepuk,Food,52
+2026-10-03 16:00:00+00:00,Ayam Gepuk,Food,20
+2026-10-03 20:00:00+00:00,Ayam Gepuk,Food,19
+2026-10-04 00:00:00+00:00,Ayam Gepuk,Food,67
+2026-10-04 04:00:00+00:00,Ayam Gepuk,Food,97
+2026-10-04 08:00:00+00:00,Ayam Gepuk,Food,75
+2026-10-04 12:00:00+00:00,Ayam Gepuk,Food,50
+2026-10-04 16:00:00+00:00,Ayam Gepuk,Food,22
+2026-10-04 20:00:00+00:00,Ayam Gepuk,Food,16
+2026-10-05 00:00:00+00:00,Ayam Gepuk,Food,42
+2026-10-05 04:00:00+00:00,Ayam Gepuk,Food,61
+2026-10-05 08:00:00+00:00,Ayam Gepuk,Food,62
+2026-10-05 12:00:00+00:00,Ayam Gepuk,Food,43
+2026-10-05 16:00:00+00:00,Ayam Gepuk,Food,20
+2026-10-05 20:00:00+00:00,Ayam Gepuk,Food,16
+2026-10-06 00:00:00+00:00,Ayam Gepuk,Food,46
+2026-10-06 04:00:00+00:00,Ayam Gepuk,Food,63
+2026-10-06 08:00:00+00:00,Ayam Gepuk,Food,63
+2026-10-06 12:00:00+00:00,Ayam Gepuk,Food,44
+2026-10-06 16:00:00+00:00,Ayam Gepuk,Food,22
+2026-10-06 20:00:00+00:00,Ayam Gepuk,Food,14
+2026-10-07 00:00:00+00:00,Ayam Gepuk,Food,47
+2026-10-07 04:00:00+00:00,Ayam Gepuk,Food,63
+2026-10-07 08:00:00+00:00,Ayam Gepuk,Food,57
+2026-10-07 12:00:00+00:00,Ayam Gepuk,Food,44
+2026-10-07 16:00:00+00:00,Ayam Gepuk,Food,22
+2026-10-07 20:00:00+00:00,Ayam Gepuk,Food,13
+2026-10-08 00:00:00+00:00,Ayam Gepuk,Food,47
+2026-10-08 04:00:00+00:00,Ayam Gepuk,Food,64
+2026-10-08 08:00:00+00:00,Ayam Gepuk,Food,60
+2026-10-08 12:00:00+00:00,Ayam Gepuk,Food,47
+2026-10-08 16:00:00+00:00,Ayam Gepuk,Food,23
+2026-10-08 20:00:00+00:00,Ayam Gepuk,Food,16
+2026-10-09 00:00:00+00:00,Ayam Gepuk,Food,48
+2026-10-09 04:00:00+00:00,Ayam Gepuk,Food,78
+2026-10-09 08:00:00+00:00,Ayam Gepuk,Food,53
+2026-10-09 12:00:00+00:00,Ayam Gepuk,Food,42
+2026-10-09 16:00:00+00:00,Ayam Gepuk,Food,21
+2026-10-09 20:00:00+00:00,Ayam Gepuk,Food,17
+2026-10-10 00:00:00+00:00,Ayam Gepuk,Food,48
+2026-10-10 04:00:00+00:00,Ayam Gepuk,Food,79
+2026-10-03 04:00:00+00:00,Daifuku,Food,46
+2026-10-03 08:00:00+00:00,Daifuku,Food,34
+2026-10-03 12:00:00+00:00,Daifuku,Food,24
+2026-10-03 16:00:00+00:00,Daifuku,Food,51
+2026-10-03 20:00:00+00:00,Daifuku,Food,0
+2026-10-04 00:00:00+00:00,Daifuku,Food,41
+2026-10-04 04:00:00+00:00,Daifuku,Food,44
+2026-10-04 08:00:00+00:00,Daifuku,Food,25
+2026-10-04 12:00:00+00:00,Daifuku,Food,46
+2026-10-04 16:00:00+00:00,Daifuku,Food,0
+2026-10-04 20:00:00+00:00,Daifuku,Food,0
+2026-10-05 00:00:00+00:00,Daifuku,Food,0
+2026-10-05 04:00:00+00:00,Daifuku,Food,29
+2026-10-05 08:00:00+00:00,Daifuku,Food,21
+2026-10-05 12:00:00+00:00,Daifuku,Food,27
+2026-10-05 16:00:00+00:00,Daifuku,Food,0
+2026-10-05 20:00:00+00:00,Daifuku,Food,0
+2026-10-06 00:00:00+00:00,Daifuku,Food,0
+2026-10-06 04:00:00+00:00,Daifuku,Food,0
+2026-10-06 08:00:00+00:00,Daifuku,Food,46
+2026-10-06 12:00:00+00:00,Daifuku,Food,34
+2026-10-06 16:00:00+00:00,Daifuku,Food,0
+2026-10-06 20:00:00+00:00,Daifuku,Food,0
+2026-10-07 00:00:00+00:00,Daifuku,Food,0
+2026-10-07 04:00:00+00:00,Daifuku,Food,18
+2026-10-07 08:00:00+00:00,Daifuku,Food,34
+2026-10-07 12:00:00+00:00,Daifuku,Food,49
+2026-10-07 16:00:00+00:00,Daifuku,Food,0
+2026-10-07 20:00:00+00:00,Daifuku,Food,0
+2026-10-08 00:00:00+00:00,Daifuku,Food,25
+2026-10-08 04:00:00+00:00,Daifuku,Food,28
+2026-10-08 08:00:00+00:00,Daifuku,Food,50
+2026-10-08 12:00:00+00:00,Daifuku,Food,36
+2026-10-08 16:00:00+00:00,Daifuku,Food,0
+2026-10-08 20:00:00+00:00,Daifuku,Food,0
+2026-10-09 00:00:00+00:00,Daifuku,Food,0
+2026-10-09 04:00:00+00:00,Daifuku,Food,31
+2026-10-09 08:00:00+00:00,Daifuku,Food,29
+2026-10-09 12:00:00+00:00,Daifuku,Food,35
+2026-10-09 16:00:00+00:00,Daifuku,Food,0
+2026-10-09 20:00:00+00:00,Daifuku,Food,0
+2026-10-10 00:00:00+00:00,Daifuku,Food,32
+2026-10-10 04:00:00+00:00,Daifuku,Food,25
+2026-10-03 04:00:00+00:00,Dubai Chocolate,Food,62
+2026-10-03 08:00:00+00:00,Dubai Chocolate,Food,72
+2026-10-03 12:00:00+00:00,Dubai Chocolate,Food,91
+2026-10-03 16:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-03 20:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-04 00:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-04 04:00:00+00:00,Dubai Chocolate,Food,56
+2026-10-04 08:00:00+00:00,Dubai Chocolate,Food,76
+2026-10-04 12:00:00+00:00,Dubai Chocolate,Food,80
+2026-10-04 16:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-04 20:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-05 00:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-05 04:00:00+00:00,Dubai Chocolate,Food,31
+2026-10-05 08:00:00+00:00,Dubai Chocolate,Food,60
+2026-10-05 12:00:00+00:00,Dubai Chocolate,Food,64
+2026-10-05 16:00:00+00:00,Dubai Chocolate,Food,100
+2026-10-05 20:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-06 00:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-06 04:00:00+00:00,Dubai Chocolate,Food,62
+2026-10-06 08:00:00+00:00,Dubai Chocolate,Food,43
+2026-10-06 12:00:00+00:00,Dubai Chocolate,Food,38
+2026-10-06 16:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-06 20:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-07 00:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-07 04:00:00+00:00,Dubai Chocolate,Food,56
+2026-10-07 08:00:00+00:00,Dubai Chocolate,Food,57
+2026-10-07 12:00:00+00:00,Dubai Chocolate,Food,75
+2026-10-07 16:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-07 20:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-08 00:00:00+00:00,Dubai Chocolate,Food,34
+2026-10-08 04:00:00+00:00,Dubai Chocolate,Food,40
+2026-10-08 08:00:00+00:00,Dubai Chocolate,Food,38
+2026-10-08 12:00:00+00:00,Dubai Chocolate,Food,70
+2026-10-08 16:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-08 20:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-09 00:00:00+00:00,Dubai Chocolate,Food,52
+2026-10-09 04:00:00+00:00,Dubai Chocolate,Food,38
+2026-10-09 08:00:00+00:00,Dubai Chocolate,Food,39
+2026-10-09 12:00:00+00:00,Dubai Chocolate,Food,41
+2026-10-09 16:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-09 20:00:00+00:00,Dubai Chocolate,Food,0
+2026-10-10 00:00:00+00:00,Dubai Chocolate,Food,46
+2026-10-10 04:00:00+00:00,Dubai Chocolate,Food,64
+2026-10-03 04:00:00+00:00,Nasi Lemak,Food,20
+2026-10-03 08:00:00+00:00,Nasi Lemak,Food,22
+2026-10-03 12:00:00+00:00,Nasi Lemak,Food,23
+2026-10-03 16:00:00+00:00,Nasi Lemak,Food,14
+2026-10-03 20:00:00+00:00,Nasi Lemak,Food,38
+2026-10-04 00:00:00+00:00,Nasi Lemak,Food,42
+2026-10-04 04:00:00+00:00,Nasi Lemak,Food,19
+2026-10-04 08:00:00+00:00,Nasi Lemak,Food,21
+2026-10-04 12:00:00+00:00,Nasi Lemak,Food,23
+2026-10-04 16:00:00+00:00,Nasi Lemak,Food,14
+2026-10-04 20:00:00+00:00,Nasi Lemak,Food,24
+2026-10-05 00:00:00+00:00,Nasi Lemak,Food,26
+2026-10-05 04:00:00+00:00,Nasi Lemak,Food,16
+2026-10-05 08:00:00+00:00,Nasi Lemak,Food,21
+2026-10-05 12:00:00+00:00,Nasi Lemak,Food,18
+2026-10-05 16:00:00+00:00,Nasi Lemak,Food,11
+2026-10-05 20:00:00+00:00,Nasi Lemak,Food,21
+2026-10-06 00:00:00+00:00,Nasi Lemak,Food,21
+2026-10-06 04:00:00+00:00,Nasi Lemak,Food,14
+2026-10-06 08:00:00+00:00,Nasi Lemak,Food,19
+2026-10-06 12:00:00+00:00,Nasi Lemak,Food,18
+2026-10-06 16:00:00+00:00,Nasi Lemak,Food,12
+2026-10-06 20:00:00+00:00,Nasi Lemak,Food,18
+2026-10-07 00:00:00+00:00,Nasi Lemak,Food,19
+2026-10-07 04:00:00+00:00,Nasi Lemak,Food,16
+2026-10-07 08:00:00+00:00,Nasi Lemak,Food,20
+2026-10-07 12:00:00+00:00,Nasi Lemak,Food,17
+2026-10-07 16:00:00+00:00,Nasi Lemak,Food,14
+2026-10-07 20:00:00+00:00,Nasi Lemak,Food,22
+2026-10-08 00:00:00+00:00,Nasi Lemak,Food,20
+2026-10-08 04:00:00+00:00,Nasi Lemak,Food,16
+2026-10-08 08:00:00+00:00,Nasi Lemak,Food,19
+2026-10-08 12:00:00+00:00,Nasi Lemak,Food,17
+2026-10-08 16:00:00+00:00,Nasi Lemak,Food,14
+2026-10-08 20:00:00+00:00,Nasi Lemak,Food,30
+2026-10-09 00:00:00+00:00,Nasi Lemak,Food,23
+2026-10-09 04:00:00+00:00,Nasi Lemak,Food,15
+2026-10-09 08:00:00+00:00,Nasi Lemak,Food,17
+2026-10-09 12:00:00+00:00,Nasi Lemak,Food,20
+2026-10-09 16:00:00+00:00,Nasi Lemak,Food,14
+2026-10-09 20:00:00+00:00,Nasi Lemak,Food,33
+2026-10-10 00:00:00+00:00,Nasi Lemak,Food,29
+2026-10-10 04:00:00+00:00,Nasi Lemak,Food,17
+2026-10-03 04:00:00+00:00,Shiopan,Food,80
+2026-10-03 08:00:00+00:00,Shiopan,Food,74
+2026-10-03 12:00:00+00:00,Shiopan,Food,65
+2026-10-03 16:00:00+00:00,Shiopan,Food,0
+2026-10-03 20:00:00+00:00,Shiopan,Food,0
+2026-10-04 00:00:00+00:00,Shiopan,Food,66
+2026-10-04 04:00:00+00:00,Shiopan,Food,100
+2026-10-04 08:00:00+00:00,Shiopan,Food,62
+2026-10-04 12:00:00+00:00,Shiopan,Food,61
+2026-10-04 16:00:00+00:00,Shiopan,Food,0
+2026-10-04 20:00:00+00:00,Shiopan,Food,0
+2026-10-05 00:00:00+00:00,Shiopan,Food,40
+2026-10-05 04:00:00+00:00,Shiopan,Food,54
+2026-10-05 08:00:00+00:00,Shiopan,Food,35
+2026-10-05 12:00:00+00:00,Shiopan,Food,29
+2026-10-05 16:00:00+00:00,Shiopan,Food,0
+2026-10-05 20:00:00+00:00,Shiopan,Food,0
+2026-10-06 00:00:00+00:00,Shiopan,Food,46
+2026-10-06 04:00:00+00:00,Shiopan,Food,43
+2026-10-06 08:00:00+00:00,Shiopan,Food,64
+2026-10-06 12:00:00+00:00,Shiopan,Food,24
+2026-10-06 16:00:00+00:00,Shiopan,Food,0
+2026-10-06 20:00:00+00:00,Shiopan,Food,0
+2026-10-07 00:00:00+00:00,Shiopan,Food,40
+2026-10-07 04:00:00+00:00,Shiopan,Food,62
+2026-10-07 08:00:00+00:00,Shiopan,Food,35
+2026-10-07 12:00:00+00:00,Shiopan,Food,26
+2026-10-07 16:00:00+00:00,Shiopan,Food,0
+2026-10-07 20:00:00+00:00,Shiopan,Food,0
+2026-10-08 00:00:00+00:00,Shiopan,Food,0
+2026-10-08 04:00:00+00:00,Shiopan,Food,57
+2026-10-08 08:00:00+00:00,Shiopan,Food,55
+2026-10-08 12:00:00+00:00,Shiopan,Food,22
+2026-10-08 16:00:00+00:00,Shiopan,Food,0
+2026-10-08 20:00:00+00:00,Shiopan,Food,0
+2026-10-09 00:00:00+00:00,Shiopan,Food,29
+2026-10-09 04:00:00+00:00,Shiopan,Food,58
+2026-10-09 08:00:00+00:00,Shiopan,Food,47
+2026-10-09 12:00:00+00:00,Shiopan,Food,26
+2026-10-09 16:00:00+00:00,Shiopan,Food,0
+2026-10-09 20:00:00+00:00,Shiopan,Food,0
+2026-10-10 00:00:00+00:00,Shiopan,Food,68
+2026-10-10 04:00:00+00:00,Shiopan,Food,69
+2026-10-03 04:00:00+00:00,Tanghulu,Food,0
+2026-10-03 08:00:00+00:00,Tanghulu,Food,0
+2026-10-03 12:00:00+00:00,Tanghulu,Food,0
+2026-10-03 16:00:00+00:00,Tanghulu,Food,0
+2026-10-03 20:00:00+00:00,Tanghulu,Food,0
+2026-10-04 00:00:00+00:00,Tanghulu,Food,0
+2026-10-04 04:00:00+00:00,Tanghulu,Food,58
+2026-10-04 08:00:00+00:00,Tanghulu,Food,0
+2026-10-04 12:00:00+00:00,Tanghulu,Food,49
+2026-10-04 16:00:00+00:00,Tanghulu,Food,0
+2026-10-04 20:00:00+00:00,Tanghulu,Food,0
+2026-10-05 00:00:00+00:00,Tanghulu,Food,0
+2026-10-05 04:00:00+00:00,Tanghulu,Food,46
+2026-10-05 08:00:00+00:00,Tanghulu,Food,32
+2026-10-05 12:00:00+00:00,Tanghulu,Food,36
+2026-10-05 16:00:00+00:00,Tanghulu,Food,0
+2026-10-05 20:00:00+00:00,Tanghulu,Food,0
+2026-10-06 00:00:00+00:00,Tanghulu,Food,0
+2026-10-06 04:00:00+00:00,Tanghulu,Food,0
+2026-10-06 08:00:00+00:00,Tanghulu,Food,34
+2026-10-06 12:00:00+00:00,Tanghulu,Food,0
+2026-10-06 16:00:00+00:00,Tanghulu,Food,0
+2026-10-06 20:00:00+00:00,Tanghulu,Food,0
+2026-10-07 00:00:00+00:00,Tanghulu,Food,0
+2026-10-07 04:00:00+00:00,Tanghulu,Food,0
+2026-10-07 08:00:00+00:00,Tanghulu,Food,0
+2026-10-07 12:00:00+00:00,Tanghulu,Food,0
+2026-10-07 16:00:00+00:00,Tanghulu,Food,0
+2026-10-07 20:00:00+00:00,Tanghulu,Food,0
+2026-10-08 00:00:00+00:00,Tanghulu,Food,0
+2026-10-08 04:00:00+00:00,Tanghulu,Food,0
+2026-10-08 08:00:00+00:00,Tanghulu,Food,33
+2026-10-08 12:00:00+00:00,Tanghulu,Food,0
+2026-10-08 16:00:00+00:00,Tanghulu,Food,0
+2026-10-08 20:00:00+00:00,Tanghulu,Food,0
+2026-10-09 00:00:00+00:00,Tanghulu,Food,32
+2026-10-09 04:00:00+00:00,Tanghulu,Food,0
+2026-10-09 08:00:00+00:00,Tanghulu,Food,0
+2026-10-09 12:00:00+00:00,Tanghulu,Food,47
+2026-10-09 16:00:00+00:00,Tanghulu,Food,0
+2026-10-09 20:00:00+00:00,Tanghulu,Food,0
+2026-10-10 00:00:00+00:00,Tanghulu,Food,0
+2026-10-10 04:00:00+00:00,Tanghulu,Food,0
+2026-10-03 04:00:00+00:00,Finance,Growth,47
+2026-10-03 08:00:00+00:00,Finance,Growth,49
+2026-10-03 12:00:00+00:00,Finance,Growth,49
+2026-10-03 16:00:00+00:00,Finance,Growth,42
+2026-10-03 20:00:00+00:00,Finance,Growth,47
+2026-10-04 00:00:00+00:00,Finance,Growth,48
+2026-10-04 04:00:00+00:00,Finance,Growth,50
+2026-10-04 08:00:00+00:00,Finance,Growth,45
+2026-10-04 12:00:00+00:00,Finance,Growth,56
+2026-10-04 16:00:00+00:00,Finance,Growth,61
+2026-10-04 20:00:00+00:00,Finance,Growth,67
+2026-10-05 00:00:00+00:00,Finance,Growth,98
+2026-10-05 04:00:00+00:00,Finance,Growth,93
+2026-10-05 08:00:00+00:00,Finance,Growth,84
+2026-10-05 12:00:00+00:00,Finance,Growth,61
+2026-10-05 16:00:00+00:00,Finance,Growth,60
+2026-10-05 20:00:00+00:00,Finance,Growth,66
+2026-10-06 00:00:00+00:00,Finance,Growth,100
+2026-10-06 04:00:00+00:00,Finance,Growth,90
+2026-10-06 08:00:00+00:00,Finance,Growth,81
+2026-10-06 12:00:00+00:00,Finance,Growth,66
+2026-10-06 16:00:00+00:00,Finance,Growth,64
+2026-10-06 20:00:00+00:00,Finance,Growth,54
+2026-10-07 00:00:00+00:00,Finance,Growth,96
+2026-10-07 04:00:00+00:00,Finance,Growth,98
+2026-10-07 08:00:00+00:00,Finance,Growth,82
+2026-10-07 12:00:00+00:00,Finance,Growth,76
+2026-10-07 16:00:00+00:00,Finance,Growth,64
+2026-10-07 20:00:00+00:00,Finance,Growth,67
+2026-10-08 00:00:00+00:00,Finance,Growth,97
+2026-10-08 04:00:00+00:00,Finance,Growth,86
+2026-10-08 08:00:00+00:00,Finance,Growth,78
+2026-10-08 12:00:00+00:00,Finance,Growth,63
+2026-10-08 16:00:00+00:00,Finance,Growth,51
+2026-10-08 20:00:00+00:00,Finance,Growth,46
+2026-10-09 00:00:00+00:00,Finance,Growth,83
+2026-10-09 04:00:00+00:00,Finance,Growth,83
+2026-10-09 08:00:00+00:00,Finance,Growth,88
+2026-10-09 12:00:00+00:00,Finance,Growth,55
+2026-10-09 16:00:00+00:00,Finance,Growth,44
+2026-10-09 20:00:00+00:00,Finance,Growth,42
+2026-10-10 00:00:00+00:00,Finance,Growth,45
+2026-10-10 04:00:00+00:00,Finance,Growth,56
+2026-10-03 04:00:00+00:00,Quotes,Growth,25
+2026-10-03 08:00:00+00:00,Quotes,Growth,24
+2026-10-03 12:00:00+00:00,Quotes,Growth,30
+2026-10-03 16:00:00+00:00,Quotes,Growth,28
+2026-10-03 20:00:00+00:00,Quotes,Growth,37
+2026-10-04 00:00:00+00:00,Quotes,Growth,29
+2026-10-04 04:00:00+00:00,Quotes,Growth,23
+2026-10-04 08:00:00+00:00,Quotes,Growth,23
+2026-10-04 12:00:00+00:00,Quotes,Growth,33
+2026-10-04 16:00:00+00:00,Quotes,Growth,29
+2026-10-04 20:00:00+00:00,Quotes,Growth,35
+2026-10-05 00:00:00+00:00,Quotes,Growth,28
+2026-10-05 04:00:00+00:00,Quotes,Growth,19
+2026-10-05 08:00:00+00:00,Quotes,Growth,23
+2026-10-05 12:00:00+00:00,Quotes,Growth,29
+2026-10-05 16:00:00+00:00,Quotes,Growth,27
+2026-10-05 20:00:00+00:00,Quotes,Growth,38
+2026-10-06 00:00:00+00:00,Quotes,Growth,27
+2026-10-06 04:00:00+00:00,Quotes,Growth,19
+2026-10-06 08:00:00+00:00,Quotes,Growth,20
+2026-10-06 12:00:00+00:00,Quotes,Growth,30
+2026-10-06 16:00:00+00:00,Quotes,Growth,31
+2026-10-06 20:00:00+00:00,Quotes,Growth,34
+2026-10-07 00:00:00+00:00,Quotes,Growth,27
+2026-10-07 04:00:00+00:00,Quotes,Growth,20
+2026-10-07 08:00:00+00:00,Quotes,Growth,22
+2026-10-07 12:00:00+00:00,Quotes,Growth,28
+2026-10-07 16:00:00+00:00,Quotes,Growth,32
+2026-10-07 20:00:00+00:00,Quotes,Growth,33
+2026-10-08 00:00:00+00:00,Quotes,Growth,25
+2026-10-08 04:00:00+00:00,Quotes,Growth,19
+2026-10-08 08:00:00+00:00,Quotes,Growth,23
+2026-10-08 12:00:00+00:00,Quotes,Growth,29
+2026-10-08 16:00:00+00:00,Quotes,Growth,29
+2026-10-08 20:00:00+00:00,Quotes,Growth,30
+2026-10-09 00:00:00+00:00,Quotes,Growth,26
+2026-10-09 04:00:00+00:00,Quotes,Growth,18
+2026-10-09 08:00:00+00:00,Quotes,Growth,21
+2026-10-09 12:00:00+00:00,Quotes,Growth,23
+2026-10-09 16:00:00+00:00,Quotes,Growth,25
+2026-10-09 20:00:00+00:00,Quotes,Growth,30
+2026-10-10 00:00:00+00:00,Quotes,Growth,25
+2026-10-10 04:00:00+00:00,Quotes,Growth,20
+2026-10-03 04:00:00+00:00,Study,Growth,38
+2026-10-03 08:00:00+00:00,Study,Growth,40
+2026-10-03 12:00:00+00:00,Study,Growth,42
+2026-10-03 16:00:00+00:00,Study,Growth,31
+2026-10-03 20:00:00+00:00,Study,Growth,29
+2026-10-04 00:00:00+00:00,Study,Growth,34
+2026-10-04 04:00:00+00:00,Study,Growth,39
+2026-10-04 08:00:00+00:00,Study,Growth,40
+2026-10-04 12:00:00+00:00,Study,Growth,52
+2026-10-04 16:00:00+00:00,Study,Growth,39
+2026-10-04 20:00:00+00:00,Study,Growth,32
+2026-10-05 00:00:00+00:00,Study,Growth,36
+2026-10-05 04:00:00+00:00,Study,Growth,38
+2026-10-05 08:00:00+00:00,Study,Growth,44
+2026-10-05 12:00:00+00:00,Study,Growth,54
+2026-10-05 16:00:00+00:00,Study,Growth,37
+2026-10-05 20:00:00+00:00,Study,Growth,32
+2026-10-06 00:00:00+00:00,Study,Growth,38
+2026-10-06 04:00:00+00:00,Study,Growth,42
+2026-10-06 08:00:00+00:00,Study,Growth,43
+2026-10-06 12:00:00+00:00,Study,Growth,51
+2026-10-06 16:00:00+00:00,Study,Growth,41
+2026-10-06 20:00:00+00:00,Study,Growth,28
+2026-10-07 00:00:00+00:00,Study,Growth,38
+2026-10-07 04:00:00+00:00,Study,Growth,37
+2026-10-07 08:00:00+00:00,Study,Growth,44
+2026-10-07 12:00:00+00:00,Study,Growth,49
+2026-10-07 16:00:00+00:00,Study,Growth,36
+2026-10-07 20:00:00+00:00,Study,Growth,32
+2026-10-08 00:00:00+00:00,Study,Growth,36
+2026-10-08 04:00:00+00:00,Study,Growth,36
+2026-10-08 08:00:00+00:00,Study,Growth,39
+2026-10-08 12:00:00+00:00,Study,Growth,49
+2026-10-08 16:00:00+00:00,Study,Growth,34
+2026-10-08 20:00:00+00:00,Study,Growth,26
+2026-10-09 00:00:00+00:00,Study,Growth,36
+2026-10-09 04:00:00+00:00,Study,Growth,38
+2026-10-09 08:00:00+00:00,Study,Growth,30
+2026-10-09 12:00:00+00:00,Study,Growth,34
+2026-10-09 16:00:00+00:00,Study,Growth,29
+2026-10-09 20:00:00+00:00,Study,Growth,16
+2026-10-10 00:00:00+00:00,Study,Growth,28
+2026-10-10 04:00:00+00:00,Study,Growth,37
+2026-10-03 04:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-03 08:00:00+00:00,Fuse Beads,Handcraft,7
+2026-10-03 12:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-03 16:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-03 20:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-04 00:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-04 04:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-04 08:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-04 12:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-04 16:00:00+00:00,Fuse Beads,Handcraft,14
+2026-10-04 20:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-05 00:00:00+00:00,Fuse Beads,Handcraft,3
+2026-10-05 04:00:00+00:00,Fuse Beads,Handcraft,3
+2026-10-05 08:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-05 12:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-05 16:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-05 20:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-06 00:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-06 04:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-06 08:00:00+00:00,Fuse Beads,Handcraft,6
+2026-10-06 12:00:00+00:00,Fuse Beads,Handcraft,3
+2026-10-06 16:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-06 20:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-07 00:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-07 04:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-07 08:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-07 12:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-07 16:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-07 20:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-08 00:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-08 04:00:00+00:00,Fuse Beads,Handcraft,3
+2026-10-08 08:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-08 12:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-08 16:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-08 20:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-09 00:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-09 04:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-09 08:00:00+00:00,Fuse Beads,Handcraft,3
+2026-10-09 12:00:00+00:00,Fuse Beads,Handcraft,4
+2026-10-09 16:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-09 20:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-10 00:00:00+00:00,Fuse Beads,Handcraft,0
+2026-10-10 04:00:00+00:00,Fuse Beads,Handcraft,5
+2026-10-03 04:00:00+00:00,Slime,Handcraft,30
+2026-10-03 08:00:00+00:00,Slime,Handcraft,32
+2026-10-03 12:00:00+00:00,Slime,Handcraft,32
+2026-10-03 16:00:00+00:00,Slime,Handcraft,41
+2026-10-03 20:00:00+00:00,Slime,Handcraft,24
+2026-10-04 00:00:00+00:00,Slime,Handcraft,24
+2026-10-04 04:00:00+00:00,Slime,Handcraft,35
+2026-10-04 08:00:00+00:00,Slime,Handcraft,34
+2026-10-04 12:00:00+00:00,Slime,Handcraft,30
+2026-10-04 16:00:00+00:00,Slime,Handcraft,47
+2026-10-04 20:00:00+00:00,Slime,Handcraft,17
+2026-10-05 00:00:00+00:00,Slime,Handcraft,15
+2026-10-05 04:00:00+00:00,Slime,Handcraft,22
+2026-10-05 08:00:00+00:00,Slime,Handcraft,26
+2026-10-05 12:00:00+00:00,Slime,Handcraft,33
+2026-10-05 16:00:00+00:00,Slime,Handcraft,36
+2026-10-05 20:00:00+00:00,Slime,Handcraft,22
+2026-10-06 00:00:00+00:00,Slime,Handcraft,16
+2026-10-06 04:00:00+00:00,Slime,Handcraft,17
+2026-10-06 08:00:00+00:00,Slime,Handcraft,24
+2026-10-06 12:00:00+00:00,Slime,Handcraft,26
+2026-10-06 16:00:00+00:00,Slime,Handcraft,40
+2026-10-06 20:00:00+00:00,Slime,Handcraft,16
+2026-10-07 00:00:00+00:00,Slime,Handcraft,15
+2026-10-07 04:00:00+00:00,Slime,Handcraft,20
+2026-10-07 08:00:00+00:00,Slime,Handcraft,26
+2026-10-07 12:00:00+00:00,Slime,Handcraft,31
+2026-10-07 16:00:00+00:00,Slime,Handcraft,24
+2026-10-07 20:00:00+00:00,Slime,Handcraft,14
+2026-10-08 00:00:00+00:00,Slime,Handcraft,12
+2026-10-08 04:00:00+00:00,Slime,Handcraft,18
+2026-10-08 08:00:00+00:00,Slime,Handcraft,22
+2026-10-08 12:00:00+00:00,Slime,Handcraft,24
+2026-10-08 16:00:00+00:00,Slime,Handcraft,34
+2026-10-08 20:00:00+00:00,Slime,Handcraft,20
+2026-10-09 00:00:00+00:00,Slime,Handcraft,12
+2026-10-09 04:00:00+00:00,Slime,Handcraft,23
+2026-10-09 08:00:00+00:00,Slime,Handcraft,23
+2026-10-09 12:00:00+00:00,Slime,Handcraft,29
+2026-10-09 16:00:00+00:00,Slime,Handcraft,33
+2026-10-09 20:00:00+00:00,Slime,Handcraft,15
+2026-10-10 00:00:00+00:00,Slime,Handcraft,18
+2026-10-10 04:00:00+00:00,Slime,Handcraft,26
+2026-10-03 04:00:00+00:00,Squishy,Handcraft,98
+2026-10-03 08:00:00+00:00,Squishy,Handcraft,100
+2026-10-03 12:00:00+00:00,Squishy,Handcraft,82
+2026-10-03 16:00:00+00:00,Squishy,Handcraft,25
+2026-10-03 20:00:00+00:00,Squishy,Handcraft,24
+2026-10-04 00:00:00+00:00,Squishy,Handcraft,74
+2026-10-04 04:00:00+00:00,Squishy,Handcraft,96
+2026-10-04 08:00:00+00:00,Squishy,Handcraft,84
+2026-10-04 12:00:00+00:00,Squishy,Handcraft,83
+2026-10-04 16:00:00+00:00,Squishy,Handcraft,33
+2026-10-04 20:00:00+00:00,Squishy,Handcraft,40
+2026-10-05 00:00:00+00:00,Squishy,Handcraft,39
+2026-10-05 04:00:00+00:00,Squishy,Handcraft,47
+2026-10-05 08:00:00+00:00,Squishy,Handcraft,71
+2026-10-05 12:00:00+00:00,Squishy,Handcraft,54
+2026-10-05 16:00:00+00:00,Squishy,Handcraft,25
+2026-10-05 20:00:00+00:00,Squishy,Handcraft,23
+2026-10-06 00:00:00+00:00,Squishy,Handcraft,38
+2026-10-06 04:00:00+00:00,Squishy,Handcraft,49
+2026-10-06 08:00:00+00:00,Squishy,Handcraft,70
+2026-10-06 12:00:00+00:00,Squishy,Handcraft,57
+2026-10-06 16:00:00+00:00,Squishy,Handcraft,24
+2026-10-06 20:00:00+00:00,Squishy,Handcraft,24
+2026-10-07 00:00:00+00:00,Squishy,Handcraft,35
+2026-10-07 04:00:00+00:00,Squishy,Handcraft,45
+2026-10-07 08:00:00+00:00,Squishy,Handcraft,65
+2026-10-07 12:00:00+00:00,Squishy,Handcraft,65
+2026-10-07 16:00:00+00:00,Squishy,Handcraft,31
+2026-10-07 20:00:00+00:00,Squishy,Handcraft,44
+2026-10-08 00:00:00+00:00,Squishy,Handcraft,32
+2026-10-08 04:00:00+00:00,Squishy,Handcraft,46
+2026-10-08 08:00:00+00:00,Squishy,Handcraft,70
+2026-10-08 12:00:00+00:00,Squishy,Handcraft,69
+2026-10-08 16:00:00+00:00,Squishy,Handcraft,25
+2026-10-08 20:00:00+00:00,Squishy,Handcraft,27
+2026-10-09 00:00:00+00:00,Squishy,Handcraft,52
+2026-10-09 04:00:00+00:00,Squishy,Handcraft,76
+2026-10-09 08:00:00+00:00,Squishy,Handcraft,65
+2026-10-09 12:00:00+00:00,Squishy,Handcraft,64
+2026-10-09 16:00:00+00:00,Squishy,Handcraft,33
+2026-10-09 20:00:00+00:00,Squishy,Handcraft,32
+2026-10-10 00:00:00+00:00,Squishy,Handcraft,72
+2026-10-10 04:00:00+00:00,Squishy,Handcraft,85
+2026-10-03 08:00:00+00:00,Diary,Lifestyle,4
+2026-10-03 12:00:00+00:00,Diary,Lifestyle,6
+2026-10-03 16:00:00+00:00,Diary,Lifestyle,5
+2026-10-03 20:00:00+00:00,Diary,Lifestyle,6
+2026-10-04 00:00:00+00:00,Diary,Lifestyle,5
+2026-10-04 04:00:00+00:00,Diary,Lifestyle,5
+2026-10-04 08:00:00+00:00,Diary,Lifestyle,5
+2026-10-04 12:00:00+00:00,Diary,Lifestyle,6
+2026-10-04 16:00:00+00:00,Diary,Lifestyle,7
+2026-10-04 20:00:00+00:00,Diary,Lifestyle,7
+2026-10-05 00:00:00+00:00,Diary,Lifestyle,4
+2026-10-05 04:00:00+00:00,Diary,Lifestyle,5
+2026-10-05 08:00:00+00:00,Diary,Lifestyle,4
+2026-10-05 12:00:00+00:00,Diary,Lifestyle,5
+2026-10-05 16:00:00+00:00,Diary,Lifestyle,6
+2026-10-05 20:00:00+00:00,Diary,Lifestyle,5
+2026-10-06 00:00:00+00:00,Diary,Lifestyle,5
+2026-10-06 04:00:00+00:00,Diary,Lifestyle,5
+2026-10-06 08:00:00+00:00,Diary,Lifestyle,6
+2026-10-06 12:00:00+00:00,Diary,Lifestyle,6
+2026-10-06 16:00:00+00:00,Diary,Lifestyle,9
+2026-10-06 20:00:00+00:00,Diary,Lifestyle,6
+2026-10-07 00:00:00+00:00,Diary,Lifestyle,6
+2026-10-07 04:00:00+00:00,Diary,Lifestyle,5
+2026-10-07 08:00:00+00:00,Diary,Lifestyle,5
+2026-10-07 12:00:00+00:00,Diary,Lifestyle,6
+2026-10-07 16:00:00+00:00,Diary,Lifestyle,8
+2026-10-07 20:00:00+00:00,Diary,Lifestyle,7
+2026-10-08 00:00:00+00:00,Diary,Lifestyle,4
+2026-10-08 04:00:00+00:00,Diary,Lifestyle,5
+2026-10-08 08:00:00+00:00,Diary,Lifestyle,5
+2026-10-08 12:00:00+00:00,Diary,Lifestyle,5
+2026-10-08 16:00:00+00:00,Diary,Lifestyle,5
+2026-10-08 20:00:00+00:00,Diary,Lifestyle,5
+2026-10-09 00:00:00+00:00,Diary,Lifestyle,4
+2026-10-09 04:00:00+00:00,Diary,Lifestyle,5
+2026-10-09 08:00:00+00:00,Diary,Lifestyle,4
+2026-10-09 12:00:00+00:00,Diary,Lifestyle,4
+2026-10-09 16:00:00+00:00,Diary,Lifestyle,6
+2026-10-09 20:00:00+00:00,Diary,Lifestyle,5
+2026-10-10 00:00:00+00:00,Diary,Lifestyle,4
+2026-10-10 04:00:00+00:00,Diary,Lifestyle,5
+2026-10-03 08:00:00+00:00,Fashion,Lifestyle,16
+2026-10-03 12:00:00+00:00,Fashion,Lifestyle,17
+2026-10-03 16:00:00+00:00,Fashion,Lifestyle,12
+2026-10-03 20:00:00+00:00,Fashion,Lifestyle,11
+2026-10-04 00:00:00+00:00,Fashion,Lifestyle,13
+2026-10-04 04:00:00+00:00,Fashion,Lifestyle,16
+2026-10-04 08:00:00+00:00,Fashion,Lifestyle,16
+2026-10-04 12:00:00+00:00,Fashion,Lifestyle,16
+2026-10-04 16:00:00+00:00,Fashion,Lifestyle,18
+2026-10-04 20:00:00+00:00,Fashion,Lifestyle,11
+2026-10-05 00:00:00+00:00,Fashion,Lifestyle,12
+2026-10-05 04:00:00+00:00,Fashion,Lifestyle,12
+2026-10-05 08:00:00+00:00,Fashion,Lifestyle,14
+2026-10-05 12:00:00+00:00,Fashion,Lifestyle,16
+2026-10-05 16:00:00+00:00,Fashion,Lifestyle,16
+2026-10-05 20:00:00+00:00,Fashion,Lifestyle,10
+2026-10-06 00:00:00+00:00,Fashion,Lifestyle,13
+2026-10-06 04:00:00+00:00,Fashion,Lifestyle,14
+2026-10-06 08:00:00+00:00,Fashion,Lifestyle,15
+2026-10-06 12:00:00+00:00,Fashion,Lifestyle,16
+2026-10-06 16:00:00+00:00,Fashion,Lifestyle,17
+2026-10-06 20:00:00+00:00,Fashion,Lifestyle,11
+2026-10-07 00:00:00+00:00,Fashion,Lifestyle,12
+2026-10-07 04:00:00+00:00,Fashion,Lifestyle,13
+2026-10-07 08:00:00+00:00,Fashion,Lifestyle,13
+2026-10-07 12:00:00+00:00,Fashion,Lifestyle,15
+2026-10-07 16:00:00+00:00,Fashion,Lifestyle,16
+2026-10-07 20:00:00+00:00,Fashion,Lifestyle,11
+2026-10-08 00:00:00+00:00,Fashion,Lifestyle,14
+2026-10-08 04:00:00+00:00,Fashion,Lifestyle,15
+2026-10-08 08:00:00+00:00,Fashion,Lifestyle,13
+2026-10-08 12:00:00+00:00,Fashion,Lifestyle,14
+2026-10-08 16:00:00+00:00,Fashion,Lifestyle,14
+2026-10-08 20:00:00+00:00,Fashion,Lifestyle,10
+2026-10-09 00:00:00+00:00,Fashion,Lifestyle,12
+2026-10-09 04:00:00+00:00,Fashion,Lifestyle,14
+2026-10-09 08:00:00+00:00,Fashion,Lifestyle,12
+2026-10-09 12:00:00+00:00,Fashion,Lifestyle,11
+2026-10-09 16:00:00+00:00,Fashion,Lifestyle,12
+2026-10-09 20:00:00+00:00,Fashion,Lifestyle,9
+2026-10-10 00:00:00+00:00,Fashion,Lifestyle,11
+2026-10-10 04:00:00+00:00,Fashion,Lifestyle,13
+2026-10-03 08:00:00+00:00,Travel,Lifestyle,70
+2026-10-03 12:00:00+00:00,Travel,Lifestyle,72
+2026-10-03 16:00:00+00:00,Travel,Lifestyle,55
+2026-10-03 20:00:00+00:00,Travel,Lifestyle,56
+2026-10-04 00:00:00+00:00,Travel,Lifestyle,73
+2026-10-04 04:00:00+00:00,Travel,Lifestyle,71
+2026-10-04 08:00:00+00:00,Travel,Lifestyle,67
+2026-10-04 12:00:00+00:00,Travel,Lifestyle,78
+2026-10-04 16:00:00+00:00,Travel,Lifestyle,57
+2026-10-04 20:00:00+00:00,Travel,Lifestyle,54
+2026-10-05 00:00:00+00:00,Travel,Lifestyle,84
+2026-10-05 04:00:00+00:00,Travel,Lifestyle,85
+2026-10-05 08:00:00+00:00,Travel,Lifestyle,79
+2026-10-05 12:00:00+00:00,Travel,Lifestyle,94
+2026-10-05 16:00:00+00:00,Travel,Lifestyle,62
+2026-10-05 20:00:00+00:00,Travel,Lifestyle,60
+2026-10-06 00:00:00+00:00,Travel,Lifestyle,83
+2026-10-06 04:00:00+00:00,Travel,Lifestyle,83
+2026-10-06 08:00:00+00:00,Travel,Lifestyle,80
+2026-10-06 12:00:00+00:00,Travel,Lifestyle,80
+2026-10-06 16:00:00+00:00,Travel,Lifestyle,62
+2026-10-06 20:00:00+00:00,Travel,Lifestyle,59
+2026-10-07 00:00:00+00:00,Travel,Lifestyle,81
+2026-10-07 04:00:00+00:00,Travel,Lifestyle,83
+2026-10-07 08:00:00+00:00,Travel,Lifestyle,74
+2026-10-07 12:00:00+00:00,Travel,Lifestyle,71
+2026-10-07 16:00:00+00:00,Travel,Lifestyle,59
+2026-10-07 20:00:00+00:00,Travel,Lifestyle,60
+2026-10-08 00:00:00+00:00,Travel,Lifestyle,83
+2026-10-08 04:00:00+00:00,Travel,Lifestyle,100
+2026-10-08 08:00:00+00:00,Travel,Lifestyle,76
+2026-10-08 12:00:00+00:00,Travel,Lifestyle,72
+2026-10-08 16:00:00+00:00,Travel,Lifestyle,59
+2026-10-08 20:00:00+00:00,Travel,Lifestyle,50
+2026-10-09 00:00:00+00:00,Travel,Lifestyle,77
+2026-10-09 04:00:00+00:00,Travel,Lifestyle,74
+2026-10-09 08:00:00+00:00,Travel,Lifestyle,63
+2026-10-09 12:00:00+00:00,Travel,Lifestyle,60
+2026-10-09 16:00:00+00:00,Travel,Lifestyle,57
+2026-10-09 20:00:00+00:00,Travel,Lifestyle,51
+2026-10-10 00:00:00+00:00,Travel,Lifestyle,64
+2026-10-10 04:00:00+00:00,Travel,Lifestyle,66
