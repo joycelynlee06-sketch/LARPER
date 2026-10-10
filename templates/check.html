@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -10,50 +9,33 @@
             content="width=device-width, initial-scale=1.0"
     >
 
-    <title>
-        Check a Trend | LARPER
-    </title>
-
+    <title>Check a Trend | LARPER</title>
 
     <link
             rel="stylesheet"
             href="{{ url_for('static', filename='css/style.css') }}"
     >
-
 </head>
-
 
 <body>
 
-
 <div class="page">
 
-
-    <!-- ==================================================
-         NAVIGATION
-    =================================================== -->
-
     <nav class="navbar">
-
 
         <a
                 href="/"
                 class="brand"
                 style="text-decoration: none;"
         >
-
             <div class="brand-icon">
                 ✦
             </div>
 
-
             <div class="brand-name">
                 LARPER
             </div>
-
         </a>
-
-
 
         <div class="nav-links">
 
@@ -70,189 +52,371 @@
 
         </div>
 
-
     </nav>
 
 
-
-    <!-- ==================================================
-         CHECKER
-    =================================================== -->
-
-    <main class="trend-checker-page">
-
-
-        <div class="checker-header">
-
-
-            <div class="section-label">
-                LARPER TREND CHECKER
-            </div>
-
-
-            <h1>
-                What trend are you thinking about?
-            </h1>
-
-
-            <p>
-
-                Select a category and choose one of the
-                available trends. LARPER will analyse
-                whether it is worth joining right now.
-
-            </p>
-
-
-        </div>
-
-
-
-        <!-- ERROR -->
-
-        {% if error %}
-
-        <div class="error-box">
-
-            {{ error }}
-
-        </div>
-
-        {% endif %}
-
-
-
-        <!-- FORM -->
+    <main class="figma-check-page">
 
         <form
                 method="POST"
-                class="trend-form"
+                class="figma-check-card"
         >
 
+            <!-- =====================================
+                 STEP 1
+            ====================================== -->
 
-            <!-- CATEGORY -->
+            <section class="figma-step">
 
-            <div class="form-group">
+                <div class="figma-step-heading">
 
+                    <div class="step-number">
+                        1
+                    </div>
 
-                <label for="category">
+                    <h2>
+                        Pick a category
+                    </h2>
 
-                    01 · Choose a category
-
-                </label>
-
-
-                <select
-                        id="category"
-                        required
-                >
+                </div>
 
 
-                    <option
-                            value=""
-                            disabled
-                            selected
-                    >
-                        Select category
-                    </option>
-
+                <div class="category-pills">
 
                     {% for category in categories %}
 
+                    <label class="category-pill">
 
-                    <option
-                            value="{{ category }}"
-                    >
+                        <input
+                                type="radio"
+                                name="category_display"
+                                value="{{ category }}"
+                                class="category-radio"
+                                required
+                        >
 
-                        {{ category }}
+                        <span class="category-pill-inner">
 
-                    </option>
+                                {% if category == "Food" %}
+                                    <span class="pill-icon">♨</span>
+                                {% elif category == "Handcraft" %}
+                                    <span class="pill-icon">✎</span>
+                                {% elif category == "Lifestyle" %}
+                                    <span class="pill-icon">♧</span>
+                                {% elif category == "Entertainment" %}
+                                    <span class="pill-icon">▣</span>
+                                {% elif category == "Growth" %}
+                                    <span class="pill-icon">▥</span>
+                                {% else %}
+                                    <span class="pill-icon">✦</span>
+                                {% endif %}
 
+                                <span>
+                                    {{ category }}
+                                </span>
+
+                            </span>
+
+                    </label>
 
                     {% endfor %}
 
+                </div>
 
-                </select>
+            </section>
 
 
+            <div class="figma-divider"></div>
+
+
+            <!-- =====================================
+                 STEP 2
+            ====================================== -->
+
+            <section class="figma-step">
+
+                <div class="figma-step-heading">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <h2>
+                        What trend are you considering?
+                    </h2>
+
+                </div>
+
+
+                <div class="trend-select-wrap">
+
+                    <span class="search-icon">
+                        ⌕
+                    </span>
+
+
+                    <select
+                            id="trend"
+                            name="trend"
+                            class="figma-trend-select"
+                            required
+                            disabled
+                    >
+
+                        <option value="">
+                            Select a category first
+                        </option>
+
+                    </select>
+
+
+                    <div class="valid-icon" id="validIcon">
+                        ✓
+                    </div>
+
+                </div>
+
+
+                <div class="field-help">
+                    Choose one of the available trends in your selected category
+                </div>
+
+            </section>
+
+
+            <div class="figma-divider"></div>
+
+
+            <!-- =====================================
+                 STEP 3
+            ====================================== -->
+
+            <section class="figma-step">
+
+                <div class="figma-step-heading">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <h2>
+                        What do you want to use it for?
+                    </h2>
+
+                </div>
+
+
+                <div class="purpose-grid">
+
+                    <!-- BUSINESS -->
+
+                    <label class="purpose-card">
+
+                        <input
+                                type="radio"
+                                name="purpose"
+                                value="Add to my business"
+                                class="purpose-radio"
+                                required
+                        >
+
+                        <div class="purpose-card-inner">
+
+                            <div class="purpose-icon">
+                                ▣
+                            </div>
+
+                            <div class="purpose-copy">
+
+                                <div class="purpose-title">
+                                    Add to my business
+                                </div>
+
+                                <div class="purpose-subtitle">
+                                    For my café, shop, or service
+                                </div>
+
+                            </div>
+
+                            <div class="purpose-check">
+                                ✓
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- CONTENT -->
+
+                    <label class="purpose-card">
+
+                        <input
+                                type="radio"
+                                name="purpose"
+                                value="Create content"
+                                class="purpose-radio"
+                        >
+
+                        <div class="purpose-card-inner">
+
+                            <div class="purpose-icon">
+                                ◧
+                            </div>
+
+                            <div class="purpose-copy">
+
+                                <div class="purpose-title">
+                                    Create content
+                                </div>
+
+                                <div class="purpose-subtitle">
+                                    For a post, video, or campaign
+                                </div>
+
+                            </div>
+
+                            <div class="purpose-check">
+                                ✓
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- PRODUCT -->
+
+                    <label class="purpose-card">
+
+                        <input
+                                type="radio"
+                                name="purpose"
+                                value="Sell a product"
+                                class="purpose-radio"
+                        >
+
+                        <div class="purpose-card-inner">
+
+                            <div class="purpose-icon">
+                                ☆
+                            </div>
+
+                            <div class="purpose-copy">
+
+                                <div class="purpose-title">
+                                    Sell a product
+                                </div>
+
+                                <div class="purpose-subtitle">
+                                    For my store or side project
+                                </div>
+
+                            </div>
+
+                            <div class="purpose-check">
+                                ✓
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <!-- CURIOUS -->
+
+                    <label class="purpose-card">
+
+                        <input
+                                type="radio"
+                                name="purpose"
+                                value="Just curious"
+                                class="purpose-radio"
+                        >
+
+                        <div class="purpose-card-inner">
+
+                            <div class="purpose-icon">
+                                ◉
+                            </div>
+
+                            <div class="purpose-copy">
+
+                                <div class="purpose-title">
+                                    Just curious
+                                </div>
+
+                                <div class="purpose-subtitle">
+                                    I want to understand the buzz
+                                </div>
+
+                            </div>
+
+                            <div class="purpose-check">
+                                ✓
+                            </div>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 ERROR
+            ====================================== -->
+
+            {% if error %}
+
+            <div class="error-box">
+                {{ error }}
             </div>
 
+            {% endif %}
 
 
-            <!-- TREND -->
-
-            <div class="form-group">
-
-
-                <label for="trend">
-
-                    02 · Choose a trend
-
-                </label>
-
-
-                <select
-                        id="trend"
-                        name="trend"
-                        required
-                        disabled
-                >
-
-
-                    <option value="">
-
-                        Select category first
-
-                    </option>
-
-
-                </select>
-
-
-            </div>
-
-
-
-            <!-- ANALYSE BUTTON -->
+            <!-- =====================================
+                 BUTTON
+            ====================================== -->
 
             <button
                     type="submit"
-                    class="main-button analyze-button"
+                    class="figma-submit-button"
             >
 
-                Analyse Trend
-
-                <span>
-                    →
-                </span>
+                Check This Trend
+                <span>✦</span>
 
             </button>
 
 
+            <div class="figma-footnote">
+
+                ◉ We look at how fast interest is growing,
+                how crowded the trend is,
+                and whether people are starting to lose interest.
+
+            </div>
+
         </form>
 
-
     </main>
-
 
 </div>
 
 
-
-<!-- ==================================================
-     CATEGORY → TREND DROPDOWN SCRIPT
-=================================================== -->
-
 <script>
-
 
     const trendOptions =
         {{ trend_options | tojson }};
 
 
-    const categorySelect =
-        document.getElementById(
-            "category"
+    const categoryRadios =
+        document.querySelectorAll(
+            ".category-radio"
         );
 
 
@@ -262,89 +426,112 @@
         );
 
 
-
-    categorySelect.addEventListener(
-        "change",
-        function () {
-
-
-            const category =
-                this.value;
+    const validIcon =
+        document.getElementById(
+            "validIcon"
+        );
 
 
-            const trends =
-                trendOptions[category]
-                || [];
+    categoryRadios.forEach(
+        radio => {
+
+            radio.addEventListener(
+                "change",
+                function () {
+
+                    const category =
+                        this.value;
+
+                    const trends =
+                        trendOptions[category]
+                        || [];
 
 
-            trendSelect.innerHTML =
-                "";
+                    trendSelect.innerHTML =
+                        "";
 
 
-            const placeholder =
-                document.createElement(
-                    "option"
-                );
-
-
-            placeholder.value =
-                "";
-
-
-            placeholder.textContent =
-                "Select a trend";
-
-
-            placeholder.disabled =
-                true;
-
-
-            placeholder.selected =
-                true;
-
-
-            trendSelect.appendChild(
-                placeholder
-            );
-
-
-            trends.forEach(
-                function (trend) {
-
-
-                    const option =
+                    const placeholder =
                         document.createElement(
                             "option"
                         );
 
+                    placeholder.value =
+                        "";
 
-                    option.value =
-                        trend;
+                    placeholder.textContent =
+                        "Select a trend";
 
+                    placeholder.disabled =
+                        true;
 
-                    option.textContent =
-                        trend;
-
+                    placeholder.selected =
+                        true;
 
                     trendSelect.appendChild(
-                        option
+                        placeholder
                     );
 
 
+                    trends.forEach(
+                        trend => {
+
+                            const option =
+                                document.createElement(
+                                    "option"
+                                );
+
+                            option.value =
+                                trend;
+
+                            option.textContent =
+                                trend;
+
+                            trendSelect.appendChild(
+                                option
+                            );
+
+                        }
+                    );
+
+
+                    trendSelect.disabled =
+                        false;
+
+
+                    validIcon.classList.remove(
+                        "show"
+                    );
+
                 }
             );
-
-
-            trendSelect.disabled =
-                false;
-
 
         }
     );
 
 
-</script>
+    trendSelect.addEventListener(
+        "change",
+        function () {
 
+            if (this.value) {
+
+                validIcon.classList.add(
+                    "show"
+                );
+
+            } else {
+
+                validIcon.classList.remove(
+                    "show"
+                );
+
+            }
+
+        }
+    );
+
+</script>
 
 </body>
 
