@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Check a Trend | LARPER
+    </title>
+
+
+    <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- ==================================================
+         NAVIGATION
+    =================================================== -->
+
+    <nav class="navbar">
+
+
+        <a
+                href="/"
+                class="brand"
+                style="text-decoration: none;"
+        >
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+
+            <div class="brand-name">
+                LARPER
+            </div>
+
+        </a>
+
+
+
+        <div class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a
+                    href="/check"
+                    class="nav-button"
+            >
+                Check a trend
+            </a>
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- ==================================================
+         CHECKER
+    =================================================== -->
+
+    <main class="trend-checker-page">
+
+
+        <div class="checker-header">
+
+
+            <div class="section-label">
+                LARPER TREND CHECKER
+            </div>
+
+
+            <h1>
+                What trend are you thinking about?
+            </h1>
+
+
+            <p>
+
+                Select a category and choose one of the
+                available trends. LARPER will analyse
+                whether it is worth joining right now.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- ERROR -->
+
+        {% if error %}
+
+        <div class="error-box">
+
+            {{ error }}
+
+        </div>
+
+        {% endif %}
+
+
+
+        <!-- FORM -->
+
+        <form
+                method="POST"
+                class="trend-form"
+        >
+
+
+            <!-- CATEGORY -->
+
+            <div class="form-group">
+
+
+                <label for="category">
+
+                    01 · Choose a category
+
+                </label>
+
+
+                <select
+                        id="category"
+                        required
+                >
+
+
+                    <option
+                            value=""
+                            disabled
+                            selected
+                    >
+                        Select category
+                    </option>
+
+
+                    {% for category in categories %}
+
+
+                    <option
+                            value="{{ category }}"
+                    >
+
+                        {{ category }}
+
+                    </option>
+
+
+                    {% endfor %}
+
+
+                </select>
+
+
+            </div>
+
+
+
+            <!-- TREND -->
+
+            <div class="form-group">
+
+
+                <label for="trend">
+
+                    02 · Choose a trend
+
+                </label>
+
+
+                <select
+                        id="trend"
+                        name="trend"
+                        required
+                        disabled
+                >
+
+
+                    <option value="">
+
+                        Select category first
+
+                    </option>
+
+
+                </select>
+
+
+            </div>
+
+
+
+            <!-- ANALYSE BUTTON -->
+
+            <button
+                    type="submit"
+                    class="main-button analyze-button"
+            >
+
+                Analyse Trend
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+        </form>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- ==================================================
+     CATEGORY → TREND DROPDOWN SCRIPT
+=================================================== -->
+
+<script>
+
+
+    const trendOptions =
+        {{ trend_options | tojson }};
+
+
+    const categorySelect =
+        document.getElementById(
+            "category"
+        );
+
+
+    const trendSelect =
+        document.getElementById(
+            "trend"
+        );
+
+
+
+    categorySelect.addEventListener(
+        "change",
+        function () {
+
+
+            const category =
+                this.value;
+
+
+            const trends =
+                trendOptions[category]
+                || [];
+
+
+            trendSelect.innerHTML =
+                "";
+
+
+            const placeholder =
+                document.createElement(
+                    "option"
+                );
+
+
+            placeholder.value =
+                "";
+
+
+            placeholder.textContent =
+                "Select a trend";
+
+
+            placeholder.disabled =
+                true;
+
+
+            placeholder.selected =
+                true;
+
+
+            trendSelect.appendChild(
+                placeholder
+            );
+
+
+            trends.forEach(
+                function (trend) {
+
+
+                    const option =
+                        document.createElement(
+                            "option"
+                        );
+
+
+                    option.value =
+                        trend;
+
+
+                    option.textContent =
+                        trend;
+
+
+                    trendSelect.appendChild(
+                        option
+                    );
+
+
+                }
+            );
+
+
+            trendSelect.disabled =
+                false;
+
+
+        }
+    );
+
+
+</script>
+
+
+</body>
+
+</html>

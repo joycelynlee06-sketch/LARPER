@@ -1,308 +1,601 @@
-
 import pandas as pd
-import json
 from pathlib import Path
 
 
+# =========================================================
+# FILE
+# =========================================================
+
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "larper_master.csv"
-COLLECTION_FILE = BASE_DIR / "my_collection.json"
 
+
+# =========================================================
+# HELPER
+# =========================================================
+
+def clamp(value, minimum=0, maximum=100):
+    return max(minimum, min(value, maximum))
+
+
+# =========================================================
+# ANALYZE TREND
+# =========================================================
 
 def analyze_trend(trend_name):
+
+    # -----------------------------------------------------
+    # Load dataset
+    # -----------------------------------------------------
+
     df = pd.read_csv(DATA_FILE)
 
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(
+        df["date"],
+        errors="coerce"
+    )
 
     trend_df = df[
-        df["trend_name"].str.lower() == trend_name.lower()
+        df["trend_name"].str.lower()
+        == trend_name.lower()
         ].copy()
 
     if trend_df.empty:
         return {
-            "error": f"Trend '{trend_name}' not found."
+            "error": f"Trend '{trend_name}' was not found."
         }
 
     trend_df = trend_df.sort_values("date")
 
-    values = trend_df["search_interest"].tolist()
+    values = (
+        trend_df["search_interest"]
+        .astype(float)
+        .tolist()
+    )
 
-    if len(values) < 6:
+    if len(values) < 8:
         return {
-            "error": "Not enough data points for prediction."
+            "error": "Not enough data to analyse this trend."
         }
 
+
     # =====================================================
-    # BASIC METRICS
+    # BASIC VALUES
     # =====================================================
 
-    current_value = values[-1]
-    peak_value = max(values)
+    current_interest = values[-1]
 
-    recent = values[-3:]
-    previous = values[-6:-3]
+    peak_interest = max(values)
 
-    recent_average = sum(recent) / len(recent)
-    previous_average = sum(previous) / len(previous)
+    average_interest = sum(values) / len(values)
+
+
+    # Last 4 readings
+    recent_values = values[-4:]
+
+    # Previous 4 readings
+    previous_values = values[-8:-4]
+
+
+    recent_average = (
+            sum(recent_values)
+            / len(recent_values)
+    )
+
+    previous_average = (
+            sum(previous_values)
+            / len(previous_values)
+    )
+
 
     # =====================================================
     # GROWTH RATE
     # =====================================================
 
-    if previous_average == 0:
-        growth_rate = 0
+    if previous_average <= 0:
+
+        if recent_average > 0:
+            growth_rate = 100
+        else:
+            growth_rate = 0
+
     else:
+
         growth_rate = (
-                              (recent_average - previous_average)
+                              (
+                                      recent_average
+                                      - previous_average
+                              )
                               / previous_average
                       ) * 100
+
+
+    # Prevent strange extreme values from dominating
+    growth_rate = clamp(
+        growth_rate,
+        -100,
+        100
+    )
+
 
     # =====================================================
     # DISTANCE FROM PEAK
     # =====================================================
 
-    if peak_value == 0:
-        distance_from_peak = 0
-    else:
+    if peak_interest > 0:
+
         distance_from_peak = (
-                                     (peak_value - current_value) / peak_value
+                                     (
+                                             peak_interest
+                                             - current_interest
+                                     )
+                                     / peak_interest
                              ) * 100
+
+    else:
+
+        distance_from_peak = 0
+
+
+    distance_from_peak = clamp(
+        distance_from_peak
+    )
+
 
     # =====================================================
     # MOMENTUM
     # =====================================================
 
-    last_change = values[-1] - values[-2]
-    previous_change = values[-2] - values[-3]
-    momentum = last_change - previous_change
+    latest_change = (
+            values[-1]
+            - values[-2]
+    )
+
+    previous_change = (
+            values[-2]
+            - values[-3]
+    )
+
+    momentum = (
+            latest_change
+            - previous_change
+    )
+
+
+    # =====================================================
+    # HOW FAST IS IT GROWING?
+    # =====================================================
+
+    if growth_rate >= 25:
+
+        growth_speed = "Very Fast"
+
+    elif growth_rate >= 10:
+
+        growth_speed = "Fast"
+
+    elif growth_rate >= 3:
+
+        growth_speed = "Steady"
+
+    elif growth_rate > -5:
+
+        growth_speed = "Slow"
+
+    else:
+
+        growth_speed = "Declining"
+
 
     # =====================================================
     # TREND STATUS
+    #
+    # ONLY:
+    # Just Starting
+    # Growing Fast
+    # Very Popular
+    # Too Crowded
+    # Losing Popularity
     # =====================================================
 
-    if growth_rate <= -10:
-        status = "Losing Popularity"
+    if (
+            growth_rate <= -15
+            or (
+            distance_from_peak >= 35
+            and growth_rate < 0
+    )
+    ):
 
-    elif current_value >= 80 and growth_rate >= 0:
-        status = "Too Crowded"
+        trend_status = "Losing Popularity"
 
-    elif current_value >= 70:
-        status = "Very Popular Now"
 
-    elif growth_rate >= 15:
-        status = "Growing Fast"
+    elif (
+            recent_average >= 70
+            and growth_rate <= 5
+    ):
+
+        trend_status = "Too Crowded"
+
+
+    elif (
+            peak_interest >= 85
+            and growth_rate < 0
+            and distance_from_peak < 30
+    ):
+
+        trend_status = "Too Crowded"
+
+
+    elif recent_average >= 65:
+
+        trend_status = "Very Popular"
+
+
+    elif growth_rate >= 10:
+
+        trend_status = "Growing Fast"
+
 
     else:
-        status = "Starting"
 
-    # =====================================================
-    # PREDICTION
-    # =====================================================
+        trend_status = "Just Starting"
 
-    if growth_rate >= 15 and momentum >= 0:
-        prediction = "Likely to Keep Growing"
-
-    elif growth_rate >= 5:
-        prediction = "Still Growing, But Watch Closely"
-
-    elif growth_rate < 0 and distance_from_peak >= 20:
-        prediction = "Likely to Lose Popularity"
-
-    elif growth_rate <= -20:
-        prediction = "Likely to Keep Declining"
-
-    else:
-        prediction = "Likely to Stay Stable"
 
     # =====================================================
     # CHANCE IT WILL DIE SOON
     # =====================================================
 
-    if growth_rate <= -20 and distance_from_peak >= 30:
-        fading_risk = "High"
+    death_risk = 25
 
-    elif growth_rate < 0 or distance_from_peak >= 30:
-        fading_risk = "Medium"
+
+    # Falling search interest
+    if growth_rate < 0:
+
+        death_risk += min(
+            abs(growth_rate) * 0.8,
+            30
+        )
+
+
+    # Far away from peak
+    death_risk += (
+            distance_from_peak * 0.3
+    )
+
+
+    # Momentum slowing
+    if momentum < 0:
+
+        death_risk += min(
+            abs(momentum) * 1.2,
+            15
+        )
+
+
+    # Very popular but growth has stopped
+    if (
+            recent_average >= 70
+            and growth_rate <= 3
+    ):
+
+        death_risk += 10
+
+
+    # Strong growth reduces risk
+    if growth_rate >= 15:
+
+        death_risk -= 20
+
+
+    elif growth_rate >= 5:
+
+        death_risk -= 10
+
+
+    death_risk = int(
+        round(
+            clamp(death_risk)
+        )
+    )
+
+
+    # =====================================================
+    # WORTH JOINING SCORE
+    # =====================================================
+
+    worth_score = 65
+
+
+    # Growth helps
+    if growth_rate >= 20:
+
+        worth_score += 20
+
+    elif growth_rate >= 10:
+
+        worth_score += 15
+
+    elif growth_rate >= 3:
+
+        worth_score += 8
+
+
+    # Status impact
+    if trend_status == "Just Starting":
+
+        worth_score += 10
+
+
+    elif trend_status == "Growing Fast":
+
+        worth_score += 15
+
+
+    elif trend_status == "Very Popular":
+
+        worth_score += 5
+
+
+    elif trend_status == "Too Crowded":
+
+        worth_score -= 20
+
+
+    elif trend_status == "Losing Popularity":
+
+        worth_score -= 35
+
+
+    # Death risk lowers worth
+    worth_score -= (
+            death_risk * 0.35
+    )
+
+
+    worth_score = int(
+        round(
+            clamp(worth_score)
+        )
+    )
+
+
+    # =====================================================
+    # RECOMMENDATION
+    # =====================================================
+
+    if (
+            worth_score >= 65
+            and death_risk <= 45
+            and trend_status
+            in [
+        "Just Starting",
+        "Growing Fast",
+        "Very Popular"
+    ]
+    ):
+
+        recommendation = "JOIN NOW"
+
+
+    elif (
+            worth_score >= 35
+            and death_risk < 75
+    ):
+
+        recommendation = "TRY SOMETHING SIMILAR"
+
 
     else:
-        fading_risk = "Low"
 
-    # =====================================================
-    # RECOMMENDATION TAG
-    # =====================================================
-
-    if status == "Losing Popularity" or fading_risk == "High":
         recommendation = "SKIP"
 
-    elif status == "Too Crowded":
-        recommendation = "TRY SOMETHING SIMILAR"
-
-    elif status == "Growing Fast" and fading_risk == "Low":
-        recommendation = "JOIN NOW"
-
-    elif status == "Starting" and fading_risk == "Low":
-        recommendation = "JOIN NOW"
-
-    elif status == "Very Popular Now" and fading_risk != "High":
-        recommendation = "TRY SOMETHING SIMILAR"
-
-    else:
-        recommendation = "TRY SOMETHING SIMILAR"
 
     # =====================================================
-    # EXPLANATION
+    # SIMPLE EXPLANATIONS
     # =====================================================
 
     reasons = []
 
-    if growth_rate > 10:
-        reasons.append("Search interest is rising quickly.")
 
-    elif growth_rate < -10:
-        reasons.append("Search interest is falling.")
+    # Growth
+    if growth_rate >= 15:
+
+        reasons.append(
+            "Search interest is rising quickly."
+        )
+
+    elif growth_rate >= 3:
+
+        reasons.append(
+            "Search interest is still growing."
+        )
+
+    elif growth_rate > -5:
+
+        reasons.append(
+            "Search interest has started to slow down."
+        )
 
     else:
-        reasons.append("Search interest is relatively stable.")
 
-    if distance_from_peak > 30:
         reasons.append(
-            "Current interest is far below its recent peak."
+            "Search interest is declining."
         )
 
-    elif distance_from_peak < 10:
+
+    # Peak
+    if distance_from_peak >= 35:
+
         reasons.append(
-            "Current interest remains close to its recent peak."
+            "Interest has dropped far below its recent peak."
         )
 
-    if momentum > 0:
-        reasons.append("Recent momentum is improving.")
+    elif distance_from_peak <= 10:
 
-    elif momentum < 0:
-        reasons.append("Recent momentum is slowing down.")
+        reasons.append(
+            "Interest is still close to its recent peak."
+        )
+
+
+    # Momentum
+    if momentum > 3:
+
+        reasons.append(
+            "Recent momentum is becoming stronger."
+        )
+
+    elif momentum < -3:
+
+        reasons.append(
+            "Recent momentum is weakening."
+        )
+
+
+    # Status explanation
+    if trend_status == "Too Crowded":
+
+        reasons.append(
+            "Interest is already very high but growth is slowing."
+        )
+
+
+    # Only display max 3 reasons
+    reasons = reasons[:3]
+
 
     # =====================================================
-    # RETURN RESULTS
+    # RESULT
     # =====================================================
 
     return {
+
         "trend": trend_name,
-        "category": trend_df.iloc[0]["category"],
-        "current_interest": round(current_value, 1),
-        "peak_interest": round(peak_value, 1),
-        "growth_rate": round(growth_rate, 1),
-        "status": status,
-        "prediction": prediction,
-        "fading_risk": fading_risk,
-        "recommendation": recommendation,
-        "reasons": reasons
+
+        "category":
+            trend_df.iloc[0]["category"],
+
+        "trend_status":
+            trend_status,
+
+        "growth_rate":
+            round(growth_rate, 1),
+
+        "growth_speed":
+            growth_speed,
+
+        "death_risk":
+            death_risk,
+
+        "worth_score":
+            worth_score,
+
+        "recommendation":
+            recommendation,
+
+        "reasons":
+            reasons,
+
+        # useful for graph / debugging
+
+        "current_interest":
+            round(current_interest, 1),
+
+        "peak_interest":
+            round(peak_interest, 1),
+
+        "recent_average":
+            round(recent_average, 1),
+
+        "distance_from_peak":
+            round(distance_from_peak, 1),
+
+        "history": [
+            {
+                "date": str(row["date"]),
+                "interest": float(row["search_interest"])
+            }
+            for _, row in trend_df.iterrows()
+        ]
+
     }
 
 
-# =====================================================
-# STAR / SAVE FAVORITE TREND
-# =====================================================
-
-def load_collection():
-    if not COLLECTION_FILE.exists():
-        return []
-
-    try:
-        with open(COLLECTION_FILE, "r", encoding="utf-8") as file:
-            return json.load(file)
-    except (json.JSONDecodeError, OSError):
-        return []
-
-
-def star_trend(result):
-    collection = load_collection()
-
-    for item in collection:
-        if item["trend"].lower() == result["trend"].lower():
-            print(f"\n⭐ {result['trend']} is already in your collection.")
-            return
-
-    collection.append({
-        "trend": result["trend"],
-        "category": str(result["category"]),
-        "status": result["status"],
-        "growth_rate": result["growth_rate"],
-        "recommendation": result["recommendation"]
-    })
-
-    with open(COLLECTION_FILE, "w", encoding="utf-8") as file:
-        json.dump(collection, file, indent=4, ensure_ascii=False)
-
-    print(f"\n⭐ {result['trend']} added to your collection!")
-
-
-# =====================================================
-# VIEW STARRED TRENDS
-# =====================================================
-
-def view_collection():
-    collection = load_collection()
-
-    print("\n" + "=" * 50)
-    print("MY FAVORITE TRENDS ⭐")
-    print("=" * 50)
-
-    if not collection:
-        print("You haven't starred any trends yet.")
-        return
-
-    for item in collection:
-        print(f"\n⭐ {item['trend']}")
-        print(f"Category: {item['category']}")
-        print(f"Trend Status: {item['status']}")
-        print(f"Growth Rate: {item['growth_rate']:+.1f}%")
-        print(f"Recommendation: {item['recommendation']}")
-
-
-# =====================================================
-# TEST
-# =====================================================
+# =========================================================
+# TERMINAL TEST
+# =========================================================
 
 if __name__ == "__main__":
 
-    trend = input("Enter a trend name: ")
+    trend = input(
+        "Enter trend name: "
+    )
 
     result = analyze_trend(trend)
 
     print("\n")
-    print("=" * 50)
+
+    print("=" * 55)
     print("LARPER TREND ANALYSIS")
-    print("=" * 50)
+    print("=" * 55)
+
 
     if "error" in result:
+
         print(result["error"])
 
+
     else:
-        print(f"\nTrend: {result['trend']}")
+
+        print(
+            f"\nTrend: "
+            f"{result['trend']}"
+        )
+
+        print(
+            f"Category: "
+            f"{result['category']}"
+        )
+
 
         print("\nTREND STATUS")
-        print(result["status"])
+        print(
+            result["trend_status"]
+        )
+
 
         print("\nHOW FAST IS IT GROWING?")
-        print(f"{result['growth_rate']:+.1f}% change")
 
-        print("\nCHANCE IT WILL DIE SOON?")
-        print(result["fading_risk"])
+        print(
+            f"{result['growth_rate']}% "
+            f"({result['growth_speed']})"
+        )
 
-        print("\nWORTH JOINING?")
-        print(result["recommendation"])
+
+        print("\nCHANCE IT WILL DIE SOON")
+
+        print(
+            f"{result['death_risk']}%"
+        )
+
+
+        print("\nWORTH JOINING")
+
+        print(
+            f"{result['worth_score']}/100"
+        )
+
+
+        print("\nRECOMMENDATION")
+
+        print(
+            result["recommendation"]
+        )
+
 
         print("\nWHY?")
+
         for reason in result["reasons"]:
-            print(f"- {reason}")
 
-        # Star this trend
-        choice = input("\n⭐ Add this trend to your favorites? (y/n): ")
-
-        if choice.lower() == "y":
-            star_trend(result)
-
-    # View collection
-    choice = input("\nView your favorite trends? (y/n): ")
-
-    if choice.lower() == "y":
-        view_collection()
+            print(
+                f"- {reason}"
+            )

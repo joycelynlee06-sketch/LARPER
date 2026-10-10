@@ -23,13 +23,17 @@
 <div class="page">
 
 
-    <!-- =========================
+    <!-- ==================================================
          NAVIGATION
-    ========================== -->
+    =================================================== -->
 
     <nav class="navbar">
 
-        <div class="brand">
+        <a
+                href="/"
+                class="brand"
+                style="text-decoration: none;"
+        >
 
             <div class="brand-icon">
                 ✦
@@ -39,7 +43,7 @@
                 LARPER
             </div>
 
-        </div>
+        </a>
 
 
         <div class="nav-links">
@@ -53,7 +57,7 @@
             </a>
 
             <a
-                    href="#check"
+                    href="/check"
                     class="nav-button"
             >
                 Check a trend
@@ -66,9 +70,9 @@
 
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <!-- ==================================================
+         HERO SECTION
+    =================================================== -->
 
     <section
             class="hero"
@@ -76,7 +80,7 @@
     >
 
 
-        <!-- LEFT -->
+        <!-- LEFT SIDE -->
 
         <div class="hero-content">
 
@@ -102,7 +106,7 @@
 
                 LARPER helps creators and small businesses
                 understand whether a trend is still growing,
-                already crowded, or beginning to fade.
+                already crowded, or beginning to lose popularity.
 
             </p>
 
@@ -110,7 +114,7 @@
             <div class="hero-actions">
 
                 <a
-                        href="#check"
+                        href="/check"
                         class="main-button"
                 >
                     Check a Trend
@@ -137,14 +141,12 @@
 
 
 
-        <!-- RIGHT GRAPH -->
+        <!-- RIGHT SIDE -->
 
         <div class="hero-visual">
 
             <div class="graph-card">
 
-
-                <!-- decorations -->
 
                 <div class="blue-circle"></div>
 
@@ -169,9 +171,6 @@
                 </div>
 
 
-
-                <!-- current point label -->
-
                 <div class="current-point">
 
                     <div class="eye-icon">
@@ -187,8 +186,7 @@
                 </div>
 
 
-
-                <!-- CURVE -->
+                <!-- TREND CURVE -->
 
                 <svg
                         class="trend-chart"
@@ -224,8 +222,6 @@
                     </defs>
 
 
-                    <!-- soft background line -->
-
                     <path
                             d="
                         M20 252
@@ -240,8 +236,6 @@
                             stroke-linecap="round"
                     />
 
-
-                    <!-- coloured line -->
 
                     <path
                             d="
@@ -260,8 +254,7 @@
                 </svg>
 
 
-
-                <!-- stages -->
+                <!-- TREND STAGES -->
 
                 <div class="stages">
 
@@ -321,7 +314,6 @@
 
                 </div>
 
-
             </div>
 
         </div>
@@ -330,9 +322,9 @@
 
 
 
-    <!-- =========================
-         CATEGORIES
-    ========================== -->
+    <!-- ==================================================
+         CATEGORY SECTION
+    =================================================== -->
 
     <section
             class="categories"
@@ -364,7 +356,6 @@
 
             </p>
 
-
         </div>
 
 
@@ -374,7 +365,11 @@
 
             <!-- FOOD -->
 
-            <div class="category-card food">
+            <a
+                    href="/check"
+                    class="category-card food"
+                    style="text-decoration: none; color: inherit;"
+            >
 
                 <div class="category-icon">
                     ☕
@@ -387,19 +382,23 @@
                         Food
                     </span>
 
-                    <button>
+                    <button type="button">
                         ›
                     </button>
 
                 </div>
 
-            </div>
+            </a>
 
 
 
             <!-- HANDCRAFT -->
 
-            <div class="category-card handcraft">
+            <a
+                    href="/check"
+                    class="category-card handcraft"
+                    style="text-decoration: none; color: inherit;"
+            >
 
                 <div class="category-icon">
                     ✎
@@ -412,19 +411,23 @@
                         Handcraft
                     </span>
 
-                    <button>
+                    <button type="button">
                         ›
                     </button>
 
                 </div>
 
-            </div>
+            </a>
 
 
 
             <!-- LIFESTYLE -->
 
-            <div class="category-card lifestyle">
+            <a
+                    href="/check"
+                    class="category-card lifestyle"
+                    style="text-decoration: none; color: inherit;"
+            >
 
                 <div class="category-icon">
                     ♧
@@ -437,19 +440,23 @@
                         Lifestyle
                     </span>
 
-                    <button>
+                    <button type="button">
                         ›
                     </button>
 
                 </div>
 
-            </div>
+            </a>
 
 
 
             <!-- ENTERTAINMENT -->
 
-            <div class="category-card entertainment">
+            <a
+                    href="/check"
+                    class="category-card entertainment"
+                    style="text-decoration: none; color: inherit;"
+            >
 
                 <div class="category-icon">
                     ▣
@@ -462,19 +469,23 @@
                         Entertainment
                     </span>
 
-                    <button>
+                    <button type="button">
                         ›
                     </button>
 
                 </div>
 
-            </div>
+            </a>
 
 
 
             <!-- GROWTH -->
 
-            <div class="category-card growth">
+            <a
+                    href="/check"
+                    class="category-card growth"
+                    style="text-decoration: none; color: inherit;"
+            >
 
                 <div class="category-icon">
                     ▥
@@ -487,14 +498,13 @@
                         Growth
                     </span>
 
-                    <button>
+                    <button type="button">
                         ›
                     </button>
 
                 </div>
 
-            </div>
-
+            </a>
 
         </div>
 
@@ -502,14 +512,11 @@
 
 
 
-    <!-- =========================
-         CHECK SECTION
-    ========================== -->
+    <!-- ==================================================
+         CHECK CTA SECTION
+    =================================================== -->
 
-    <section
-            class="check-section"
-            id="check"
-    >
+    <section class="check-section">
 
         <div class="section-label">
             READY TO CHECK?
@@ -523,15 +530,16 @@
 
         <p>
 
-            Choose a trend and LARPER will show
-            its current status, AI prediction,
-            and what you should do next.
+            Choose a category and a trend.
+            LARPER will analyse its trend status,
+            growing speed, death risk,
+            worth-joining score and recommendation.
 
         </p>
 
 
         <a
-                href="#"
+                href="/check"
                 class="main-button"
         >
             Start Checking
@@ -542,14 +550,18 @@
 
 
 
-    <!-- =========================
+    <!-- ==================================================
          FOOTER
-    ========================== -->
+    =================================================== -->
 
     <footer>
 
 
-        <div class="brand">
+        <a
+                href="/"
+                class="brand"
+                style="text-decoration: none;"
+        >
 
             <div class="brand-icon">
                 ✦
@@ -559,7 +571,7 @@
                 LARPER
             </div>
 
-        </div>
+        </a>
 
 
         <div class="footer-message">

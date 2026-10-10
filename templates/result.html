@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {{ result.trend }} | LARPER
+    </title>
+
+
+    <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- ==================================================
+         NAVIGATION
+    =================================================== -->
+
+    <nav class="navbar">
+
+
+        <a
+                href="/"
+                class="brand"
+                style="text-decoration: none;"
+        >
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+
+            <div class="brand-name">
+                LARPER
+            </div>
+
+        </a>
+
+
+
+        <div class="nav-links">
+
+
+            <a href="/">
+                Home
+            </a>
+
+
+            <a href="/check">
+                Check another trend
+            </a>
+
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- ==================================================
+         RESULT
+    =================================================== -->
+
+    <main class="result-page">
+
+
+        <!-- TOP -->
+
+        <div class="result-top">
+
+
+            <div>
+
+
+                <div class="section-label">
+                    TREND ANALYSIS
+                </div>
+
+
+                <div class="result-category">
+
+                    {{ result.category }}
+
+                </div>
+
+
+                <h1>
+
+                    {{ result.trend }}
+
+                </h1>
+
+
+            </div>
+
+
+
+            <button
+                    id="saveButton"
+                    class="save-button"
+                    onclick="saveTrend()"
+            >
+
+                ♡ Save to Collection
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             STATUS + RECOMMENDATION
+        =================================================== -->
+
+        <section class="status-hero">
+
+
+            <!-- STATUS -->
+
+            <div class="status-left">
+
+
+                <div class="metric-label">
+
+                    TREND STATUS
+
+                </div>
+
+
+                <div class="big-status">
+
+                    {{ result.trend_status }}
+
+                </div>
+
+
+                <p>
+
+                    Based on recent search-interest
+                    movement and momentum.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- RECOMMENDATION -->
+
+            <div class="recommendation-box">
+
+
+                <div class="metric-label">
+
+                    OUR RECOMMENDATION
+
+                </div>
+
+
+                <div class="recommendation-text">
+
+                    {{ result.recommendation }}
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             METRICS
+        =================================================== -->
+
+        <section class="metric-grid">
+
+
+            <!-- GROWTH SPEED -->
+
+            <div class="metric-card">
+
+
+                <div class="metric-label">
+
+                    HOW FAST IS IT GROWING?
+
+                </div>
+
+
+                <div class="metric-number">
+
+
+                    {% if result.growth_rate > 0 %}
+
+                    +
+
+                    {% endif %}
+
+
+                    {{ result.growth_rate }}%
+
+
+                </div>
+
+
+                <div class="metric-description">
+
+                    {{ result.growth_speed }}
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- DEATH RISK -->
+
+            <div class="metric-card">
+
+
+                <div class="metric-label">
+
+                    CHANCE IT WILL DIE SOON
+
+                </div>
+
+
+                <div class="metric-number">
+
+                    {{ result.death_risk }}%
+
+                </div>
+
+
+                <div class="progress-bar">
+
+
+                    <div
+                            class="progress-fill risk-fill"
+                            style="
+                            width:
+                            {{ result.death_risk }}%;
+                        "
+                    >
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- WORTH JOINING -->
+
+            <div class="metric-card">
+
+
+                <div class="metric-label">
+
+                    WORTH JOINING?
+
+                </div>
+
+
+                <div class="metric-number">
+
+                    {{ result.worth_score }}
+
+                    <small>
+                        /100
+                    </small>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+
+                    <div
+                            class="progress-fill worth-fill"
+                            style="
+                            width:
+                            {{ result.worth_score }}%;
+                        "
+                    >
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             WHY
+        =================================================== -->
+
+        <section class="why-section">
+
+
+            <div class="section-label">
+
+                WHY IS LARPER SAYING THIS?
+
+            </div>
+
+
+            <h2>
+
+                The signals behind the decision
+
+            </h2>
+
+
+
+            <div class="reason-list">
+
+
+                {% for reason in result.reasons %}
+
+
+                <div class="reason">
+
+
+                    <div class="reason-icon">
+                        ✦
+                    </div>
+
+
+                    <div>
+
+                        {{ reason }}
+
+                    </div>
+
+
+                </div>
+
+
+                {% endfor %}
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ACTIONS
+        =================================================== -->
+
+        <div class="result-actions">
+
+
+            <a
+                    href="/check"
+                    class="secondary-button"
+            >
+
+                ← Check another trend
+
+            </a>
+
+
+            <button
+                    onclick="saveTrend()"
+                    class="main-button"
+            >
+
+                ♡ Save to Collection
+
+            </button>
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- ==================================================
+     SAVE TO COLLECTION USING LOCAL STORAGE
+=================================================== -->
+
+<script>
+
+
+    const trendResult = {
+
+
+        trend:
+            {{ result.trend | tojson }},
+
+
+    category:
+    {{ result.category | tojson }},
+
+
+    status:
+    {{ result.trend_status | tojson }},
+
+
+    growthRate:
+    {{ result.growth_rate }},
+
+
+    growthSpeed:
+    {{ result.growth_speed | tojson }},
+
+
+    deathRisk:
+    {{ result.death_risk }},
+
+
+    worthScore:
+    {{ result.worth_score }},
+
+
+    recommendation:
+    {{ result.recommendation | tojson }}
+
+
+    };
+
+
+
+    function saveTrend() {
+
+
+        let collection =
+            JSON.parse(
+                localStorage.getItem(
+                    "larperCollection"
+                )
+            )
+            || [];
+
+
+        const alreadySaved =
+            collection.some(
+                item =>
+                    item.trend
+                    === trendResult.trend
+            );
+
+
+        if (!alreadySaved) {
+
+
+            collection.push(
+                trendResult
+            );
+
+
+            localStorage.setItem(
+                "larperCollection",
+                JSON.stringify(
+                    collection
+                )
+            );
+
+
+        }
+
+
+        updateSaveButtons();
+
+
+    }
+
+
+
+    function updateSaveButtons() {
+
+
+        const collection =
+            JSON.parse(
+                localStorage.getItem(
+                    "larperCollection"
+                )
+            )
+            || [];
+
+
+        const saved =
+            collection.some(
+                item =>
+                    item.trend
+                    === trendResult.trend
+            );
+
+
+        if (saved) {
+
+
+            const buttons =
+                document.querySelectorAll(
+                    ".save-button, .result-actions .main-button"
+                );
+
+
+            buttons.forEach(
+                button => {
+
+
+                    button.innerHTML =
+                        "✓ Saved to Collection";
+
+
+                }
+            );
+
+
+        }
+
+
+    }
+
+
+
+    window.addEventListener(
+        "load",
+        function () {
+
+
+            updateSaveButtons();
+
+
+        }
+    );
+
+
+</script>
+
+
+</body>
+
+</html>
