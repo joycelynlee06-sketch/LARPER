@@ -155,8 +155,16 @@
             </div>
 
 
-            <div class="recommendation-box">
-
+            <div class="recommendation-box
+    {% set recommendation = result.recommendation | upper | trim %}
+    {% if recommendation == 'JOIN NOW' %}
+        join
+    {% elif recommendation == 'TRY SOMETHING SIMILAR' %}
+        similar
+    {% elif recommendation == 'SKIP' %}
+        skip
+    {% endif %}
+">
                 <div class="metric-label">
                     OUR RECOMMENDATION
                 </div>
@@ -164,7 +172,6 @@
                 <div class="recommendation-text">
                     {{ result.recommendation }}
                 </div>
-
             </div>
 
         </section>

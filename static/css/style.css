@@ -2853,3 +2853,71 @@ footer {
     }
 
 }
+
+/* =========================================================
+LARPER PASTEL RECOMMENDATION COLOURS
+========================================================= */
+
+/* JOIN NOW - Sage Green */
+.recommendation-box.join {
+    background: #DEF1E5;
+    border: 1px solid #C6E3D0;
+    color: #426650;
+}
+
+/* TRY SOMETHING SIMILAR - Pastel Purple */
+.recommendation-box.similar {
+    background: #EEE5FF;
+    border: 1px solid #D8C8F5;
+    color: #7054A6;
+}
+
+/* SKIP - Pastel Pink */
+.recommendation-box.skip {
+    background: #FBE1EA;
+    border: 1px solid #F0C9D8;
+    color: #984F6A;
+}
+
+/* Keep recommendation labels readable */
+.recommendation-box.join .metric-label,
+.recommendation-box.similar .metric-label,
+.recommendation-box.skip .metric-label {
+    color: inherit;
+}
+/* =========================================================
+   REFERENCE POSTS
+========================================================= */
+
+.reference-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.reference-card {
+    min-width: 0;
+}
+
+.reference-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+    .reference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .reference-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
