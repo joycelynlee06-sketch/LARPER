@@ -1,9 +1,12 @@
+
 import pandas as pd
+import json
 from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "larper_master.csv"
+COLLECTION_FILE = BASE_DIR / "my_collection.json"
 
 
 def analyze_trend(trend_name):
@@ -29,27 +32,18 @@ def analyze_trend(trend_name):
             "error": "Not enough data points for prediction."
         }
 
-
     # =====================================================
     # BASIC METRICS
     # =====================================================
 
     current_value = values[-1]
-
     peak_value = max(values)
 
-    overall_average = sum(values) / len(values)
-
-
-    # Recent 3 readings
     recent = values[-3:]
-
-    # Previous 3 readings
     previous = values[-6:-3]
 
     recent_average = sum(recent) / len(recent)
     previous_average = sum(previous) / len(previous)
-
 
     # =====================================================
     # GROWTH RATE
@@ -63,7 +57,6 @@ def analyze_trend(trend_name):
                               / previous_average
                       ) * 100
 
-
     # =====================================================
     # DISTANCE FROM PEAK
     # =====================================================
@@ -72,44 +65,35 @@ def analyze_trend(trend_name):
         distance_from_peak = 0
     else:
         distance_from_peak = (
-                                     (peak_value - current_value)
-                                     / peak_value
+                                     (peak_value - current_value) / peak_value
                              ) * 100
-
 
     # =====================================================
     # MOMENTUM
     # =====================================================
 
     last_change = values[-1] - values[-2]
-
     previous_change = values[-2] - values[-3]
-
     momentum = last_change - previous_change
 
-
     # =====================================================
-    # CURRENT STATUS
+    # TREND STATUS
     # =====================================================
 
-    if recent_average >= 75:
-        status = "Very Popular"
-
-    elif growth_rate >= 20:
-        status = "Growing Fast"
-
-    elif growth_rate >= 5:
-        status = "Growing"
-
-    elif growth_rate <= -20:
+    if growth_rate <= -10:
         status = "Losing Popularity"
 
-    elif distance_from_peak >= 35:
-        status = "Fading"
+    elif current_value >= 80 and growth_rate >= 0:
+        status = "Too Crowded"
+
+    elif current_value >= 70:
+        status = "Very Popular Now"
+
+    elif growth_rate >= 15:
+        status = "Growing Fast"
 
     else:
-        status = "Stable"
-
+        status = "Starting"
 
     # =====================================================
     # PREDICTION
@@ -117,40 +101,53 @@ def analyze_trend(trend_name):
 
     if growth_rate >= 15 and momentum >= 0:
         prediction = "Likely to Keep Growing"
-        recommendation = "JOIN NOW"
 
     elif growth_rate >= 5:
         prediction = "Still Growing, But Watch Closely"
-        recommendation = "MOVE FAST"
 
     elif growth_rate < 0 and distance_from_peak >= 20:
         prediction = "Likely to Lose Popularity"
-        recommendation = "TRY SOMETHING SIMILAR"
 
     elif growth_rate <= -20:
         prediction = "Likely to Keep Declining"
-        recommendation = "SKIP"
 
     else:
         prediction = "Likely to Stay Stable"
-        recommendation = "MONITOR"
-
 
     # =====================================================
-    # CONFIDENCE SCORE
+    # CHANCE IT WILL DIE SOON
     # =====================================================
 
-    confidence = 60
+    if growth_rate <= -20 and distance_from_peak >= 30:
+        fading_risk = "High"
 
-    confidence += min(abs(growth_rate), 20)
+    elif growth_rate < 0 or distance_from_peak >= 30:
+        fading_risk = "Medium"
 
-    confidence += min(abs(momentum), 10)
+    else:
+        fading_risk = "Low"
 
-    if distance_from_peak > 20:
-        confidence += 5
+    # =====================================================
+    # RECOMMENDATION TAG
+    # =====================================================
 
-    confidence = int(min(confidence, 95))
+    if status == "Losing Popularity" or fading_risk == "High":
+        recommendation = "SKIP"
 
+    elif status == "Too Crowded":
+        recommendation = "TRY SOMETHING SIMILAR"
+
+    elif status == "Growing Fast" and fading_risk == "Low":
+        recommendation = "JOIN NOW"
+
+    elif status == "Starting" and fading_risk == "Low":
+        recommendation = "JOIN NOW"
+
+    elif status == "Very Popular Now" and fading_risk != "High":
+        recommendation = "TRY SOMETHING SIMILAR"
+
+    else:
+        recommendation = "TRY SOMETHING SIMILAR"
 
     # =====================================================
     # EXPLANATION
@@ -167,7 +164,6 @@ def analyze_trend(trend_name):
     else:
         reasons.append("Search interest is relatively stable.")
 
-
     if distance_from_peak > 30:
         reasons.append(
             "Current interest is far below its recent peak."
@@ -178,17 +174,11 @@ def analyze_trend(trend_name):
             "Current interest remains close to its recent peak."
         )
 
-
     if momentum > 0:
-        reasons.append(
-            "Recent momentum is improving."
-        )
+        reasons.append("Recent momentum is improving.")
 
     elif momentum < 0:
-        reasons.append(
-            "Recent momentum is slowing down."
-        )
-
+        reasons.append("Recent momentum is slowing down.")
 
     # =====================================================
     # RETURN RESULTS
@@ -199,16 +189,73 @@ def analyze_trend(trend_name):
         "category": trend_df.iloc[0]["category"],
         "current_interest": round(current_value, 1),
         "peak_interest": round(peak_value, 1),
-        "recent_average": round(recent_average, 1),
         "growth_rate": round(growth_rate, 1),
-        "distance_from_peak": round(distance_from_peak, 1),
-        "momentum": round(momentum, 1),
         "status": status,
         "prediction": prediction,
-        "confidence": confidence,
+        "fading_risk": fading_risk,
         "recommendation": recommendation,
         "reasons": reasons
     }
+
+
+# =====================================================
+# STAR / SAVE FAVORITE TREND
+# =====================================================
+
+def load_collection():
+    if not COLLECTION_FILE.exists():
+        return []
+
+    try:
+        with open(COLLECTION_FILE, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def star_trend(result):
+    collection = load_collection()
+
+    for item in collection:
+        if item["trend"].lower() == result["trend"].lower():
+            print(f"\n⭐ {result['trend']} is already in your collection.")
+            return
+
+    collection.append({
+        "trend": result["trend"],
+        "category": str(result["category"]),
+        "status": result["status"],
+        "growth_rate": result["growth_rate"],
+        "recommendation": result["recommendation"]
+    })
+
+    with open(COLLECTION_FILE, "w", encoding="utf-8") as file:
+        json.dump(collection, file, indent=4, ensure_ascii=False)
+
+    print(f"\n⭐ {result['trend']} added to your collection!")
+
+
+# =====================================================
+# VIEW STARRED TRENDS
+# =====================================================
+
+def view_collection():
+    collection = load_collection()
+
+    print("\n" + "=" * 50)
+    print("MY FAVORITE TRENDS ⭐")
+    print("=" * 50)
+
+    if not collection:
+        print("You haven't starred any trends yet.")
+        return
+
+    for item in collection:
+        print(f"\n⭐ {item['trend']}")
+        print(f"Category: {item['category']}")
+        print(f"Trend Status: {item['status']}")
+        print(f"Growth Rate: {item['growth_rate']:+.1f}%")
+        print(f"Recommendation: {item['recommendation']}")
 
 
 # =====================================================
@@ -217,9 +264,7 @@ def analyze_trend(trend_name):
 
 if __name__ == "__main__":
 
-    trend = input(
-        "Enter a trend name: "
-    )
+    trend = input("Enter a trend name: ")
 
     result = analyze_trend(trend)
 
@@ -233,41 +278,31 @@ if __name__ == "__main__":
 
     else:
         print(f"\nTrend: {result['trend']}")
-        print(f"Category: {result['category']}")
 
-        print("\nCURRENT STATUS")
+        print("\nTREND STATUS")
         print(result["status"])
 
-        print("\nAI PREDICTION")
-        print(result["prediction"])
+        print("\nHOW FAST IS IT GROWING?")
+        print(f"{result['growth_rate']:+.1f}% change")
 
-        print("\nCONFIDENCE")
-        print(f"{result['confidence']}%")
+        print("\nCHANCE IT WILL DIE SOON?")
+        print(result["fading_risk"])
 
-        print("\nRECOMMENDATION")
+        print("\nWORTH JOINING?")
         print(result["recommendation"])
 
         print("\nWHY?")
         for reason in result["reasons"]:
             print(f"- {reason}")
 
-        print("\nMETRICS")
-        print(
-            f"Current interest: "
-            f"{result['current_interest']}"
-        )
+        # Star this trend
+        choice = input("\n⭐ Add this trend to your favorites? (y/n): ")
 
-        print(
-            f"Peak interest: "
-            f"{result['peak_interest']}"
-        )
+        if choice.lower() == "y":
+            star_trend(result)
 
-        print(
-            f"Growth rate: "
-            f"{result['growth_rate']}%"
-        )
+    # View collection
+    choice = input("\nView your favorite trends? (y/n): ")
 
-        print(
-            f"Distance from peak: "
-            f"{result['distance_from_peak']}%"
-        )
+    if choice.lower() == "y":
+        view_collection()
